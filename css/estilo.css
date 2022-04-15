@@ -2,7 +2,13 @@
 body{
     font-family: 'Roboto';
     background-image: url(../img/fundo2.png);
+    background-size: contain;
+    
 } /*Carina*/
+
+.aluno img{
+    width: 60px;
+}
 
 /*
 
