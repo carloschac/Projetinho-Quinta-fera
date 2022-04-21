@@ -55,6 +55,9 @@ function novoEventoValido(nomeAluno, nomeEvento, dataEvento){
 
     if (!validarok){
         msgDeErro.innerHTML = erro;
+        msgDeErro.classList.remove('d-none');
+    }else{
+        msgDeErro.classList.add('d-none');
     }
     return validarok;
 }
