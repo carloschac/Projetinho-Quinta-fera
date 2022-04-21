@@ -16,8 +16,15 @@ function ocultarNovoEvento(){
     novoEvento.classList.add('d-none');
 }
 
-function novoEventoValido(){
-    return false;
+function novoEventoValido(nomeAluno, nomeEvento, dataEvento){
+    if(nomeAluno.trim().length === 0) return false;
+    if(nomeEvento.trim().length === 0) return false;
+    var timestampEvento = Date.parse(dataEvento);
+    if (isNaN(timestampEvento)) return false;
+    var timestampAtual = (new Date()).getTime();
+    if (timestampEvento < timestampAtual) return false;
+    return true;
+
 }
 
 function salvarNovoEvento(event){
