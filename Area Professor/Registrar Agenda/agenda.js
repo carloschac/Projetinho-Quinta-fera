@@ -10,8 +10,8 @@ var tabelaEventos = document.getElementById('tabelaEventos')
 
 var listaEventos =[];
 var eventoExemplo = {
-    nomealun: 'ex',
-    nomeev: 'ex',
+    nomealun: 'Ana Gabriela de Chaves',
+    nomeev: 'Aula de JavaScript',
     data: new Date(),
 };
 listaEventos.push(eventoExemplo)
@@ -20,6 +20,26 @@ function atualizarListaEventos(){
 
     if(listaEventos.lengt5 === 0){
         tabelaEventos.innerHTML = '<tr><td colspan="3">Nenhum evento</td></tr>';
+        return;
+    }
+    tabelaEventos.innerHTML = '';
+    for(var i = 0; i < listaEventos.length; i ++){
+        var evento = listaEventos[i];
+        var linha = document.createElement('tr');
+        var celulaNome = document.createElement('td');
+        var celulaEvento = document.createElement('td');
+        var celulaData = document.createElement('td');
+        var celulaAcoes = document.createElement('td');
+        celulaNome.innerText = evento.nomealun;
+        celulaEvento.innerText = evento.nomeev;
+        celulaData.innerText = evento.data;
+        linha.appendChild(celulaNome);
+        linha.appendChild(celulaEvento);
+        linha.appendChild(celulaData);
+        linha.appendChild(celulaAcoes);
+        tabelaEventos.appendChild(linha);
+
+
     }
 }
 
@@ -95,6 +115,13 @@ function salvarNovoEvento(event){
     var dataEvento = inputDataEvento.value;
     if (novoEventoValido(nomeAluno, nomeEvento, dataEvento)) {
         console.log('ok');
+        listaEventos.push({
+            nomealun: nomeAluno,
+            nomeev: nomeEvento,
+            data: new Date(dataEvento),
+        });
+        atualizarListaEventos();
+        ocultarNovoEvento();
     }else {
         console.log('nao');
     }
