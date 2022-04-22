@@ -7,7 +7,7 @@
         alert('Logado com sucesso! Clique em OK para ser redirecionado para a Area do Professor')
         location.href = "AreaProf.html";
     }else{
-        alert('Usuário ou senha incorretos!')
+        alert('Erro! Verifique se os campos estão em branco OU se seu login e senha estão corretos.')
     }
 }
 
