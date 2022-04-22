@@ -6,6 +6,28 @@ var inputNomeAluno = document.getElementById('nomeAluno');
 var inputNomeEvento = document.getElementById('nomeEvento');
 var inputDataEvento = document.getElementById('dataEvento');
 var msgDeErro = document.getElementById('msgDeErro');
+var tabelaEventos = document.getElementById('tabelaEventos')
+
+var listaEventos =[];
+var eventoExemplo = {
+    nomealun: 'ex',
+    nomeev: 'ex',
+    data: new Date(),
+};
+listaEventos.push(eventoExemplo)
+
+function atualizarListaEventos(){
+
+    if(listaEventos.lengt5 === 0){
+        tabelaEventos.innerHTML = '<tr><td colspan="3">Nenhum evento</td></tr>';
+    }
+}
+
+function limparNovoEvento() {
+    inputNomeAluno.value ='';
+    inputNomeEvento.value='';
+    inputDataEvento.value='';
+}
 
 function mostrarNovoEvento(){
     // mostrar o formulario quando clicar em novo evento
@@ -15,8 +37,12 @@ function mostrarNovoEvento(){
 function ocultarNovoEvento(){
     // mostrar o formulario quando clicar em novo evento
     novoEvento.classList.add('d-none');
+    limparNovoEvento();
+    inputNomeAluno.classList.remove('is-invalid');
+    inputNomeEvento.classList.remove('is-invalid');
+    inputDataEvento.classList.remove('is-invalid');
+    msgDeErro.classList.add('d-none');
 }
-
 
 function novoEventoValido(nomeAluno, nomeEvento, dataEvento){
     // validar entrada de dados no form
@@ -77,3 +103,4 @@ function salvarNovoEvento(event){
 buttonNovoEvento.addEventListener('click', mostrarNovoEvento);
 buttonCancelar.addEventListener('click', ocultarNovoEvento);
 formNovoEvento.addEventListener('submit', salvarNovoEvento);
+window.addEventListener('load', atualizarListaEventos);
