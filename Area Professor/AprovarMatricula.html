@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprovar matrícula</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 </head>
 <body>
     <header>
@@ -14,6 +15,20 @@
     </header>
     <section>
 
+    <h3>Solicitações de Matrícula:</h3>
+
+        <!-- Inserindo manualmente as solicitações em uma tabela (futuramente poderão ser recebidas via form) -->
+
+    <div id= "solicitacaoMatricula" class="">
+        <table>
+            <tr>
+                <th>Nome</th><th>Disciplina</th><th>Carga horária</th><th>Horas Totais Aluno</th>
+            </tr>
+            <tr>
+                <td>Ana Gabriela de Chaves</td><td>Futsal</td><td>80h</td><td><a href="horasaluno.html">Consulte aqui</a></td><td><button type="button" id="aprovarSolicitacao">Aprovar Solicitação</button></td>
+            </tr>	
+        </table>
+    </div>
 
         <button><a href="./AreaProf.html">Voltar</a></button>
     </section>
@@ -22,4 +37,5 @@
 		<p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
 	</footer>
 </body>
+    <script src="AprovarMatricula.js"></script>
 </html>
