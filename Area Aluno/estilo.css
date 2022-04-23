@@ -1,8 +1,9 @@
 /*------------------------------------------------- Area Aluno -----------------------------------------*/
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url(../img/fundo2.png);
-    background-size: cover;
+    /*background-image: url(../img/fundo3.png);
+    background-size: cover;*/
+    background-color: #dfe6e9;
     color: #243a69;
     font-size: 62.5%;/*100%*/
     
