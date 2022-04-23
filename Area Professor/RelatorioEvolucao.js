@@ -1,3 +1,11 @@
+var individual = document.getElementById('individual');
+var buttonIndividual = document.getElementById('buttonIndividual');
+
+
+
+function mostrarRelatorioIndividual() {
+    individual.classList.remove('d-none');
+}
 
 function gerarRelatorio1(){
     document.getElementById('relatorio_disciplina').innerHTML = document.getElementById('disciplina').value;
@@ -8,3 +16,5 @@ function gerarRelatorio1(){
     document.getElementById('relatorio_obs').innerHTML = document.getElementById('obs').value;
     window.print();
 }
+
+buttonIndividual.addEventListener('click', mostrarRelatorioIndividual);
