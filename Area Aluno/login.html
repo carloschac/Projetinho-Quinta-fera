@@ -2,41 +2,57 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Carina Rosa">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Login Aluno</title>
-    <link rel="stylesheet" href="estilo.css">
+    
 </head>
 <body>
-    <header>
-        
-        <a href="../Index/index.html"><img src="../img/page-2.png" alt="Logo Colégio Negativo"></a> 
-        <h1>Login Area do Aluno</h1>
-    </header>
-    <section>
-        <h3>Faça o seu login abaixo.</h3>
-        <form>
-            <p>
-                <label>Login:</label><br>
-                <input type="text" id="login" required>
-            </p>
-            <p>
-                <label>Senha:</label><br>
-                <input type="password" id="senha" required>
-            </p>
-            <p>
-                <input type="submit" onclick="logar(); return false"> 
-            </p>
-        </form>
+    <div class="container clearfix">
+        <header>
+		
+            <a href="index.html"><img src="../img/page-2.png" alt="Colegio Tectivo" class="logo"></a>
+            <h1>Login Area do Aluno</h1>
+            
+        </header>
+        <section>
+            <h2>Preencha os campos abaixo para efetuar login.</h2>
+            <form>
+                <p>
+                    <label>Login:</label><br>
+                    <input type="text" id="login" required>
+                </p>
+                <p>
+                    <label>Senha:</label><br>
+                    <input type="password" id="senha" required>
+                </p>
+                <p>
+                    <input type="submit" onclick="logar(); return false"> 
+                </p>
+            </form>
 
-        <p><a href="#">Esqueceu a senha?</a></p>
+            <p class="esqueceu"><a href="#">Esqueceu a senha?</a></p>
 
-    </section>
-    <footer>
-        <p>2022. Trabalho para a disciplina de Tópicos Especiais de Sistemas JS.</p>
-    </footer>
-
-   <script src="login.js"></script>
+        </section>
+        <footer>
+            <p>2022. Trabalho para a disciplina de Tópicos Especiais de Sistemas JS.</p>
+        </footer>
+    </div>
+   
 
 </body>
+<script src="login.js"></script>
 </html>

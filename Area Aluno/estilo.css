@@ -1,6 +1,6 @@
 /*------------------------------------------------- Area Aluno -----------------------------------------*/
 body{
-    font-family: 'Permanent Marker', 'Roboto';
+    font-family: 'Boogaloo', 'Permanent Marker', 'Roboto';
     /*background-image: url(../img/fundo3.png);
     background-size: cover;*/
     background-color: #dfe6e9;
@@ -22,7 +22,7 @@ a:hover{
 nav{
     float: center;
     width: 74.46%; /*840px / 1128*/
-    font-family: 'Indie Flower';
+    
 }
 
 nav ul{
@@ -71,10 +71,10 @@ header img{
 
 h1{
     text-align: left;
-    font-size: 3.6em;
+    font-size: 40px;
     margin-top: 0;
     padding: 50px;
-    margin-left: 400px;
+    margin-left: 500px;
     
 }
 
@@ -115,15 +115,19 @@ article p{
 
 .aviso{
     width: 600px;
-    padding: 100px 420px 20px 300px;
+    /*padding: 100px 420px 20px 300px;*/
+    text-align: center;
+    margin-top: 80px;
     
 }
 
 h2{
     font-size: 24px;
-    text-align: justify;
-    padding: 0 420px 50px 300px;
+    text-align: center;
+    padding: 0 420px 50px 400px;
     color: #341f97;
+    font-family: 'Indie Flower';
+    
 }
 
 h2 a{
@@ -133,10 +137,16 @@ h2 a{
 table{
     width: 300px;
     height: 300px;
-    margin-left: 520px;
+    margin-left: 500px;
     margin-right: 420px;
     margin-top: 40px;
     margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+table th{
+    font-size: 18px;
 }
 
 p{
@@ -148,6 +158,10 @@ button{
     text-align: center;
     margin-top: 50px;
     
+}
+
+.esqueceu{
+    font-size: 14px;
 }
 
 
