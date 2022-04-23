@@ -8,6 +8,17 @@ body{
     font-size: 62.5%;/*100%*/    
 } 
 
+a{
+    text-decoration: none;
+    font-size: 1em; /*16px*/
+    color: #243a69;
+    
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 .container{
     max-width: 1320px;
     margin: 0 auto; 
@@ -48,6 +59,40 @@ h1{
 .logo{
     width: 300px; /*150px / 1128px*/
     float: left;
+}
+
+article{
+    width: 100px; /*264px / 1128px*/
+    float: left;
+    margin-right: 10.24%; /*24px / 1128px*/   
+    font-size: 1.8em; 
+    margin-top: 80px; 
+    text-align: center;
+    
+}
+
+article:last-child{
+    margin-right: 0;
+}
+
+article:first-child{
+    margin-left: 100px;
+}
+
+article:nth-child(5n){
+    margin-left: 100px;
+}
+
+footer{
+    color: #636e72;
+    margin-top: 120px;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+footer p{
+    font-size: 12px;
+    margin-left: 0;
 }
 
 
