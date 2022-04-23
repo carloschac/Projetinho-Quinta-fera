@@ -56,13 +56,20 @@ h1{
     
 }
 
+
+
 .logo{
     width: 300px; /*150px / 1128px*/
     float: left;
 }
 
+section{
+    text-align: center;
+   
+}
+
 article{
-    width: 100px; /*264px / 1128px*/
+    width: 120px; /*264px / 1128px*/
     float: left;
     margin-right: 10.24%; /*24px / 1128px*/   
     font-size: 1.8em; 
@@ -76,22 +83,34 @@ article:last-child{
 }
 
 article:first-child{
-    margin-left: 100px;
+    margin-left: 250px;
 }
 
 article:nth-child(5n){
-    margin-left: 100px;
+    margin-left: 250px;
+}
+
+p{
+    font-size: 28px;
+    text-align: center;
+}
+
+.button{
+    text-align: center;
+    margin-top: 50px;
+    
 }
 
 footer{
     color: #636e72;
-    margin-top: 120px;
+    margin-top: 620px;
     margin-left: 0;
     margin-bottom: 0;
+    text-align: center;
 }
 
 footer p{
-    font-size: 12px;
+    font-size: 16px;
     margin-left: 0;
 }
 
