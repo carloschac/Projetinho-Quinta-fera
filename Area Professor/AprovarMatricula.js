@@ -1,11 +1,16 @@
 var solicitacaoMatricula = document.getElementById('solicitacaoMatricula');
-var aprovarSolicitacao = document.getElementById('aprovarSolicitacao');
+var buttonAprovarSolicitacao = document.getElementById('buttonAprovarSolicitacao');
+var buttonNegarSolicitacao = document.getElementById('buttonNegarSolicitacao');
 
 function aceitarSolicitacoes(){
     // Futuramente cód para aceitar a solocitação
     solicitacaoMatricula.classList.add('d-none');
-    window.confirm('Tem certeza que deseja aceitar a solicitação?');
-    window.alert('Solicitação aceita!');
+    alert('Matrícula aprovada!');
+}
+function negarSolicitacoes(){
+    solicitacaoMatricula.classList.add('d-none');
+    alert('Matrícula negada!');
 }
 
-aprovarSolicitacao.addEventListener('click', aceitarSolicitacoes);
+buttonAprovarSolicitacao.addEventListener('click', aceitarSolicitacoes);
+buttonNegarSolicitacao.addEventListener('click', negarSolicitacoes);
