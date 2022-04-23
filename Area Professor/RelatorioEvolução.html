@@ -14,6 +14,48 @@
     </header>
     <section>
 
+        <h3>Gerar relatório de evolução dos alunos</h3>  
+
+        <div class="dados">
+            <p>Relatório Individual</p>
+            <p>
+                <label>Disciplina:</label>
+                <input type="text" placeholder="Ex: Matemática" id="disciplina">
+            </p>
+            <p>
+                <label>Nome do Aluno:</label> 
+                <input type="text" id="nome">
+            </p>
+            <p>
+                <label>Nota Primeiro Bimestre:</label>
+                <input type="number" step="0.1" id="nota1b">
+            </p>
+            <p>
+                <label>Nota Segundo Bimestre:</label>
+                <input type="number" min="0" step="0.01" id="nota2b">
+            </p>
+            <p>
+                <label>Frequência nas aulas:</label>
+                <input type="text" placeholder="Ex: Boa, média, ruim" id="frequencia">
+            </p>
+            <p>
+                <label>Observações:</label>
+                <input type="text" id="obs">
+            </p>
+            <button onclick="gerarRelatorio1()">Gerar Relatório</button>
+        </div>
+      
+        <div class="print">
+            <h2>Relatório Individual </h2>
+            <h3>Disciplina - <span id="relatorio_disciplina"></span></h3>
+            <h2>Aluno: <span id="relatorio_nome"></span> </h2>
+            <p>Nota Primeiro Bimestre: <span id="relatorio_nota1b"></span></p>
+            <p>Nota Segundo Bimestre: <span id="relatorio_nota2b"></span></p>
+            <p>Frequencia nas aulas: <span id="relatorio_frequencia"></span></p>
+            <p>Observações <span id="relatorio_obs"></span></p>
+        </div>
+           
+            
 
         <button><a href="./AreaProf.html">Voltar</a></button>
     </section>
@@ -21,4 +63,5 @@
 		<p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
 	</footer>
 </body>
+<script src="RelatorioEvolucao.js"></script>
 </html>
