@@ -1,10 +1,10 @@
 /*------------------------------------------------- Area Aluno -----------------------------------------*/
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Permanent Marker', 'Roboto';
     /*background-image: url(../img/fundo3.png);
     background-size: cover;*/
     background-color: #dfe6e9;
-    color: #243a69;
+    color: #341f97;
     font-size: 62.5%;/*100%*/
     
 } /*Carina*/
@@ -22,6 +22,7 @@ a:hover{
 nav{
     float: center;
     width: 74.46%; /*840px / 1128*/
+    font-family: 'Indie Flower';
 }
 
 nav ul{
@@ -31,17 +32,19 @@ nav ul{
 nav li{
     display: inline-block; /*para não quebrar a linha*/
     font-size: 16px; /*12px*/
-    margin-top: 1em; /*10px / 840px*/
+    margin-top: 16px; /*10px / 840px*/
     margin-left: 300px;/*20px / 840px*/   
 }
 
 nav li a{
     color: #243a69;
+    
 }
 
 .container{
     max-width: 1320px;
-    margin: 0 auto;    
+    margin: 0 auto; 
+       
 }
 
 img, figure, video, embed{ 
@@ -53,7 +56,8 @@ header{
     height: 160px; /*altura do header em relação ao site*/
      /*36px*/
     margin-bottom: 20px;
-    /*background-color: #5b88a5;*/
+    background-color: #b2bec3;
+    border-radius: 50px;
     
 }
 
@@ -62,13 +66,15 @@ header img{
     width: 300px;
     margin-top: 0;
     margin-right: 0;
+    margin-left: 60px;
 }
 
 h1{
-    text-align: center;
+    text-align: left;
     font-size: 3.6em;
     margin-top: 0;
     padding: 50px;
+    margin-left: 400px;
     
 }
 
@@ -81,6 +87,10 @@ section{
     text-align: center;
    
 }
+
+/*.section{
+    background-color: #dfe6e9;
+}*/
 
 article{
     width: 100px; /*264px / 1128px*/
@@ -113,11 +123,11 @@ h2{
     font-size: 24px;
     text-align: justify;
     padding: 0 420px 50px 300px;
-    color: #85e6c0;
+    color: #341f97;
 }
 
 h2 a{
-    color: #85e6c0;
+    color: #341f97;
 }
 
 table{
@@ -142,35 +152,22 @@ button{
 
 
 footer{
-    color: #e2c18d;
+    color: #636e72;
     margin-top: 120px;
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
 footer p{
     font-size: 12px;
+    margin-left: 0;
 }
 /*
 
-.color1 { #878286 }; rosa claro/cinza
-.color2 { #88b6a3 }; Verde bem claro/cinza
-.color3 { #bdba9e }; beje/cinza claro
-.color4 { #e2c18d }; amarelo clarinho
-.color5 { #e2bb64 }; amarelo
-.color1 { #1f192f }; Azul escuro/Roxo
-.color2 { #2d6073 }; Azul ciano
-.color3 { #65b8a6 }; Azul claro/verde
-.color4 { #b5e8c3 }; verde muito claro
-.color5 { #f0f7da }; Amarelo quase branco
-.color1 { #f7f4e8 }; Branco
-.color2 { #daf3ea }; Verde bem claro (quase branco)
-.color3 { #85e6c0 }; Verde bem Claro
-.color4 { #6bb39b }; Verde Claro
-.color5 { #0b0b0d }; Azul bem escuro (quase preto)
-.color1 { #d4cdc5 }; Laranja bem claro (quase branco)
-.color2 { #5b88a5 }; Azul claro/cinza
-.color3 { #f4f4f2 }; Branco
-.color4 { #191013 }; Vermelho escuro (quase preto)
-.color5 { #243a69 }; Azul escuro
+https://flatuicolors.com/palette/ca
+https://flatuicolors.com/palette/de
+https://flatuicolors.com/palette/us
+
 */
 
 /*Sobre a logo - 
