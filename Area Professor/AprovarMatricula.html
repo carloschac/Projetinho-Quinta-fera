@@ -6,40 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprovar matrícula</title>
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">-->
+    
 </head>
+
 <body>
-    <header>
-        <a href="../Index/index.html"><img src="../img/page-2.png" alt="logo clg negativo"></a>
-        <h1>Aprovar matrícula</h1>
-    </header>
-    <section>
-
-    <h3>Solicitações de Matrícula:</h3>
-
-        <!-- Inserindo manualmente as solicitações em uma tabela (futuramente poderão ser recebidas via form) -->
-
-    <div class="">
-        <table>
-            <tr>
-                <th>Nome</th><th>Atividade</th><th>Carga horária</th><th>Horas Totais Aluno</th>
-            </tr>
+    <div class="container clearfix">
+        <header>
+                
+            <a href="index.html"><img src="../img/page-2.png" alt="Colegio Tectivo" class="logo"></a>
+            <h1>Aprovar Matricula</h1>
             
-            <tr id= "solicitacaoMatricula">
-                <td>Ana Gabriela de Chaves</td><td>Futsal</td><td>80h</td><td><a href="horasaluno.html">Consulte aqui</a></td><td> <button type="button" id="buttonAprovarSolicitacao">Aprovar Solicitação</button></td><td> <button type="button" id="buttonNegarSolicitacao">Negar Solicitação</button></td>
-            </tr>		
-        </table>
-    </div>
-    
-    
-   <p>Não há mais dados para exbir</p>
+        </header>
+        <section>
 
-        <button><a href="./AreaProf.html">Voltar</a></button>
-    </section>
-    
-    <footer>
-		<p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
-	</footer>
+            <p>Solicitações de Matrícula:</p>
+
+                <!-- Inserindo manualmente as solicitações em uma tabela (futuramente poderão ser recebidas via form) -->
+
+            <div>
+                <table>
+                    <tr>
+                        <th>Nome</th><th>Atividade</th><th>Carga horária</th><th>Horas Totais Aluno</th>
+                    </tr>
+                    
+                    <tr id= "solicitacaoMatricula">
+                        <td>Ana Gabriela de Chaves</td><td>Futsal</td><td>80h</td>
+                        <td><a href="horasaluno.html">Consulte aqui</a></td>
+                        <td> <button type="button" id="buttonAprovarSolicitacao">Aprovar Solicitação</button></td>
+                        <td> <button type="button" id="buttonNegarSolicitacao">Negar Solicitação</button></td>
+                    </tr>		
+                </table>
+            </div>
+            
+        
+            <h3>Não há mais dados para exbir</h3>
+
+            <button class="button"><a href="./AreaProf.html">Voltar</a></button>
+        </section>
+        
+        <footer>
+            <p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
+        </footer>
+    </div>
 </body>
     <script src="AprovarMatricula.js"></script>
 </html>

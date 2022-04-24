@@ -56,7 +56,11 @@ h1{
     
 }
 
-
+h3{
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 
 .logo{
     width: 300px; /*150px / 1128px*/
@@ -114,6 +118,17 @@ footer p{
     margin-left: 0;
 }
 
+table{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 16px;
+}
+
+table th{
+    font-size: 18px;
+}
 
 
 /* CSS Relatorio Evolucao  print */
