@@ -184,3 +184,9 @@ table th{
     }
 }
 
+/* css notas */
+/* #listaRegistros{display: none; }
+        #cadastroRegistro{display: none;}
+
+        body[page=lista]#listaRegistro{ display: block;}
+        body[page=cadatro]#cadastroRegistro{display: block;} */
