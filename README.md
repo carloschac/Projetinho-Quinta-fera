@@ -1,4 +1,5 @@
 # Projetinho-Quinta-fera
+
 Area do Aluno:
 
 *agenda de provas
@@ -16,19 +17,19 @@ Area do Professor:
 *Material para estudo
 *Faltas
 *Notas
-*chat
+\*chat
 
 Area do Funcionario:
 
- - Secretaria
+- Secretaria
 
 *Matriculas
 *Frequencia
 *chat
 *Notas
-*Controle aprovações matriculas
+\*Controle aprovações matriculas
 
- - Financeiro
+- Financeiro
 
 *Atividades extras
 *Emissão Boleto
