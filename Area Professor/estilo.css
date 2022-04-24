@@ -103,12 +103,18 @@ article:nth-child(5n){
     margin-left: 250px;
 }
 
-
+.form{
+    margin-top: 70px;
+}
 
 .button{
     text-align: center;
     margin-top: 50px;
     
+}
+
+.esqueceu{
+    font-size: 14px;
 }
 
 .footer{
