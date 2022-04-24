@@ -8,6 +8,15 @@ body{
     font-size: 62.5%;/*100%*/    
 } 
 
+.body{
+    font-family: 'Boogaloo', 'Permanent Marker', 'Roboto';
+    /*background-image: url(../img/fundo3.png);
+    background-size: cover;*/
+    background-color: #dfe6e9;
+    color: #341f97;
+    font-size: 62.5%;/*100%*/
+}
+
 a{
     text-decoration: none;
     font-size: 1em; /*16px*/
@@ -59,6 +68,8 @@ h1{
     margin-left: 500px;
     
 }
+
+
 
 h2{
     font-size: 24px;

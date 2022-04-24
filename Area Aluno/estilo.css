@@ -19,6 +19,8 @@ a:hover{
     text-decoration: underline;
 }
 
+/*config menus*/
+
 nav{
     float: center;
     width: 74.46%; /*840px / 1128*/
@@ -133,6 +135,8 @@ h2 a{
     color: #341f97;
 }
 
+/*Table de todas as pgs*/
+
 table{
     width: 300px;
     height: 300px;
@@ -153,6 +157,8 @@ p{
     text-align: center;
 }
 
+/*Botão voltar de todas as pgs*/
+
 button{
     text-align: center;
     margin-top: 50px;
@@ -162,6 +168,17 @@ button{
 .esqueceu{
     font-size: 14px;
 }
+
+/*Chat profs*/
+
+.caixatexto{
+    width: 500px;
+    height: 200px;
+    text-align: justify;
+    border-radius: 15px;
+}
+
+/*Footer todas as pgs*/
 
 
 footer{
