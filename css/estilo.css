@@ -109,7 +109,7 @@ h2{
 section{
   text-align: center;
   
-  background-image: url('../img/fundoindex2.png');
+  
   background-size: cover;
   /*border-radius: 0;*/
   opacity: 0.95;
@@ -151,4 +151,13 @@ footer p{
   font-size: 12px;
   margin-left: 0;
   line-height: 1em;
+}
+.tipoUsuario {
+
+}
+.option{
+  display: list-item;
+  border: 3px solid #fff;
+  padding: 3px;
+  
 }
