@@ -1,9 +1,108 @@
 /* ------------------ INDEX ----------------------*/
 
-.container {
-  max-width: 1320px;
+body {
+  font-family: 'Boogaloo', 'Permanent Marker', 'Roboto';
+    /*background-image: url(../img/fundo3.png);
+    background-size: cover;*/
+  background-color: #dfe6e9;
+  color: #341f97;
+  font-size: 62.5%;/*100%*/
 }
 
-body {
-  font-family: 'Roboto';
+a{
+  text-decoration: none;
+  font-size: 1em; /*16px*/
+  color: #243a69;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+nav{
+  float: right;
+  width: 740px; /*840px / 1128*/
+  
+}
+
+nav ul{
+  float: right; /*posição que vai ficar carregado*/
+
+}
+
+nav li{
+  display: inline-block; /*para não quebrar a linha*/
+  font-size: 16px; /*12px*/
+  margin-top: 10px; /*10px / 840px*/
+  margin-left: 40px;/*20px / 840px*/   
+}
+
+nav li a{
+  color: #243a69;
+  
+}
+
+nav:last-child{
+  margin-right: 120px;
+  
+}
+
+.container{
+  max-width: 1320px;
+  margin: 0 auto; 
+     
+}
+
+img, figure, video, embed{ 
+  max-width: 100%;
+}
+
+header{
+  width: 100%;
+  height: 170px;
+  margin-bottom: 0;
+  background-color: #b2bec3;
+  border-radius: 50px;
+}
+
+header img{
+  text-align: left;
+  width: 300px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 60px;
+}
+
+h1{
+  text-align: left;
+  font-size: 40px;
+  margin-top: 0;
+  padding-top: 50px;
+  margin-left: 600px;
+  
+}
+
+h2{
+  font-size: 28px;
+  text-align: center;
+  
+  color: #341f97;
+     
+}
+
+.logo{
+  width: 300px; /*150px / 1128px*/
+  float: left;
+}
+
+main{
+  background: url('../img/fundoindex.jpg');
+  background-size: cover;
+  border-radius: 25px;
+  height: 100%;
+}
+
+section{
+  text-align: center;
+ 
 }
