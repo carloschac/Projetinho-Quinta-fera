@@ -47,6 +47,10 @@ header img{
     margin-left: 60px;
 }
 
+.margemnotas{
+    margin-bottom: 70px;
+}
+
 h1{
     text-align: left;
     font-size: 40px;
@@ -57,7 +61,7 @@ h1{
 }
 
 h2{
-    font-size: 22px;
+    font-size: 24px;
 }
 
 h3{
@@ -69,6 +73,7 @@ h3{
 p{
     font-size: 18px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .logo{
@@ -113,9 +118,15 @@ article:nth-child(5n){
     
 }
 
+.label{
+    font-size: 16px;
+}
+
 .esqueceu{
     font-size: 14px;
 }
+
+
 
 .footer{
     color: #636e72;

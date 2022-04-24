@@ -4,36 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../img/page-2.png">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Material de estudo</title>
 </head>
 <body>
-    <header>
-        <a href="../Index/index.html"><img src="../img/page-2.png" alt="logo clg negativo"></a>
-        <h1>Postar Material de estudo</h1>
-    </header>
-    <section>
-            <p>Selecione para quem deseja enviar o material para estudo:</p>
-                <label>Aluno</label> 
-                <input type="checkbox" value="Aluno">
-                <label>Turma</label>
-                <input type="checkbox" value="Turma">
-             <p>  
-                <label>Selecione a turma:</label> 
-                <input type="text">
-                <label>Selecione o aluno:</label> 
-                <input type="text" >
-            </p>
-            <p>
-                <button onclick="anexar()">Anexar Arquivo</button> <button onclick="enviar()"> Enviar</button>
-            </p>
+    <div class="container clearfix">
+        <header>
+                
+            <a href="index.html"><img src="../img/page-2.png" alt="Colegio Tectivo" class="logo"></a>
+            <h1>Postar Material para Estudo</h1>
+            
+        </header>
+        <section>
+                <h2>Selecione para quem deseja enviar o material para estudo:</h2>
+                    <label class="label">Aluno</label> 
+                    <input type="checkbox" value="Aluno">
+                    <label class="label">Turma</label>
+                    <input type="checkbox" value="Turma">
+                <p>  
+                    <label>Selecione a turma:</label> 
+                    <input type="text">
+                    <label>Selecione o aluno:</label> 
+                    <input type="text" >
+                </p>
+                <p>
+                    <button onclick="anexar()">Anexar Arquivo</button> <button onclick="enviar()"> Enviar</button>
+                </p>
 
 
-        <button><a href="./AreaProf.html">Voltar</a></button>
-    </section>
-    <footer>
-		<p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
-	</footer>
-    <script src="MaterialEstudo.js"></script>
+            <button class="button"><a href="./AreaProf.html">Voltar</a></button>
+        </section>
+        <footer>
+            <p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
+        </footer>
+    </div>
+    
 </body>
+<script src="MaterialEstudo.js"></script>
 </html>
