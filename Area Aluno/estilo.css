@@ -115,6 +115,33 @@ article:first-child{
     font-size: 16px;
 }*/
 
+/*ajuste article pg notasfaltas*/
+.notasFaltas{
+    width: 110px;
+    text-align: center;
+    margin-bottom: 50px; 
+    display: inline-block;       
+}
+
+.notasFaltas:last-child{
+    margin-right: 0;
+}
+
+.notasFaltas:first-child{
+    margin-left: 500px;
+}
+
+.registro{
+    
+    margin-top: 50px;
+    display: inline-block;
+    text-align: center;  
+}
+
+
+
+/*Area Aluno*/
+
 .aviso{
     width: 600px;
     /*padding: 100px 420px 20px 300px;*/
@@ -153,13 +180,17 @@ table th{
 }
 
 .table{
-    width: 1100px;
+    width: 1320px;
     height: 20px;
     margin-left: 0px;
     margin-top: 60px;
     margin-bottom: 30px;
     margin-right: 15px;
     padding: 0;
+}
+
+.table td{
+    width: 50px;
 }
 
 p{

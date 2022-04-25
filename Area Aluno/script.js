@@ -10,6 +10,12 @@ function func2() {
     window.alert('Atividade Extra ainda não esta disponivel para ingresso! Tente mais tarde!')
 }
 
+function func3() {
+    window.alert('Ainda não esta funcionando. Assim que ajustarmos te avisaremos.')
+    /*window.prompt('Digite seu numero para avisarmos por SMS')
+    window.alert('Obrigado(a)! Até a proxima.')*/
+}
+
 
 /* Aba Notas e Faltas*/
 function faltas() {
@@ -43,7 +49,7 @@ var eventoExemplo = {
 };
 
 
-var listaEventos.push(eventoExemplo)
+var listaEventos.push(eventoExemplo);
 }
 
 function atualizarListaEventos(){
