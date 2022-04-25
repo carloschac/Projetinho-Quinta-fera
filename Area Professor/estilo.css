@@ -73,6 +73,8 @@ h1{
 
 h2{
     font-size: 24px;
+    text-align: center;
+    
 }
 
 h3{
@@ -129,6 +131,10 @@ article:nth-child(5n){
     
 }
 
+button{
+    margin-bottom: 50px;
+}
+
 .label{
     font-size: 16px;
 }
@@ -169,7 +175,13 @@ table{
 }
 
 table th{
-    font-size: 18px;
+    font-size: 14px;
+}
+
+.table{
+    text-align: center;
+    font-size: 16px;    
+    margin-left: 100px;
 }
 
 
