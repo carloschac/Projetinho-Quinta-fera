@@ -17,76 +17,69 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Matricula</title>
+    <title>Matricula e Rematricula</title>
 </head>
 <body>
-    <header>
-        <a href="../Index/index.html"><img src="../img/page-2.png" alt="logo clg negativo"></a>
-    </header>
-
-    <div class= "matricula"> <h1>Matricula Aluno</h1></div>
-    <div class= "conteudo">
-        <form>
+    <div class="container clearfix">
+        <header>
+		
+            <a href="index.html"><img src="../img/page-2.png" alt="Colegio Tectivo" class="logo"></a>
+            <h1>Matricula Aluno</h1>
             
-            <div id="nome">
-                
-                <h2 class="nome"> Nome completo </h2>
-                <input class="nome" type="" name="Nome">
-                <label class="nome">Nome completo</label>
+        </header>        
+        <section>          
+            <div class= "conteudo">
+                <form>                
+                    <div id="nome">
+                        
+                        <p class="nome"> Nome completo </p>
+                        <input class="nome" type="" name="Nome">
+                        <label class="nome">Nome completo</label>
 
-                <h2 class="nome"> Nome responsável </h2>
-                <input class="nome" type="" name="Nome responsável">
-                <label class="nome">Nome responsável</label>
+                        <p class="nome"> Nome responsável </p>
+                        <input class="nome" type="" name="Nome responsável">
+                        <label class="nome">Nome responsável</label>
 
-                <h2 class="nome"> Email </h2>
-                <input class="Email" type="" name="Nome">
-                <label class="nome">Email responsável</label>
+                        <p class="nome"> Email </p>
+                        <input class="Email" type="" name="Nome">
+                        <label class="nome">Email responsável</label>
 
-                <h2 class="nome"> Série </h2>
-                <input class="nome" type="" name="Nome">
-                <label class="nome">Série do Aluno</label>
+                        <p class="nome"> Série </p>
+                        <input class="nome" type="" name="Nome">
+                        <label class="nome">Série do Aluno</label>
 
-                <h2 class="nome"> Telefone Responsável </h2>
-                <input class="codigo" type="" name="codigo_area">
-                <label class="codigo_area">DDD</label>
-                <input class="number" type="number"></input>
-                <label class="numero-telefone">Telefone</label>
+                        <p class="nome"> Telefone Responsável </p>
+                        <input class="codigo" type="" name="codigo_area">
+                        <label class="codigo_area">DDD</label>
+                        <input class="number" type="number"></input>
+                        <label class="numero-telefone">Telefone</label>
 
-                <h2 class="responsável">Pai/mãe/responsável</h2>
-                <select class="opcoes" name="assunto">
-                    
-                    <option disabled= "disabled" selected= "selected"> Selecione a opção</option>
-                    <option>Mãe</option>
-                    <option>Pai</option>
-                    <option>Responsável</option>
-                </select>
+                        <p class="responsável">Pai/mãe/responsável</p>
+                        <select class="opcoes" name="assunto">
+                            
+                            <option disabled= "disabled" selected= "selected"> Selecione a opção</option>
+                            <option>Mãe</option>
+                            <option>Pai</option>
+                            <option>Responsável</option>
+                        </select>
 
-                    <h2 class="responsável">Matricula/ Rematricula</h2>
-                <select class="opcoes" name="assunto">
-                    
-                    <option disabled= "disabled" selected= "selected"> Selecione a opção</option>
-                    <option>Matricula</option>
-                    <option>Rematricula</option>
-                    <option>Atividades extras</option>
-                </select>
-
+                            <p class="responsável">Matricula/ Rematricula</p>
+                        <select class="opcoes" name="assunto">
+                            
+                            <option disabled= "disabled" selected= "selected"> Selecione a opção</option>
+                            <option>Matricula</option>
+                            <option>Rematricula</option>
+                            <option>Atividades extras</option>
+                        </select>
+                    </div>
+                </form>
             </div>
 
-
-
-        </form>
-
-
+            <button><a href="./arearesponsaveis.html">Voltar</a></button>
+        </section>
+        <footer>
+            <p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
+        </footer>
     </div>
-    <p>
-    
-    <section>
-
-
-        <button><a href="index.html">Voltar</a></button>
-    </section>
-    <footer>
-		<p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
-	</footer>
 </body>
 </html>
