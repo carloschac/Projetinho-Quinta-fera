@@ -29,48 +29,57 @@
         </header>        
         <section>          
             <div class= "conteudo">
+                <h2>Dados Cadastrais do Aluno:</h2>
                 <form>                
                     <div id="nome">
                         
-                        <p class="nome"> Nome completo </p>
-                        <input class="nome" type="" name="Nome">
-                        <label class="nome">Nome completo</label>
+                        <p> 
+                            <label class="nome">Nome completo</label>
+                            <input class="nome" type="" name="Nome" maxlength="50" placeholder="Maria Eduarda Fonseca">
+                        </p>
 
-                        <p class="nome"> Nome responsável </p>
-                        <input class="nome" type="" name="Nome responsável">
-                        <label class="nome">Nome responsável</label>
+                        <p>
+                            <label class="nome">Nome responsável</label>
+                            <input class="nome" type="" name="Nome responsável" maxlength="50" placeholder="Clarice Lispector">                        
+                        </p>
 
-                        <p class="nome"> Email </p>
-                        <input class="Email" type="" name="Nome">
-                        <label class="nome">Email responsável</label>
+                        <p>
+                            <label class="nome">Email responsável</label> 
+                            <input class="Email" type="" name="Nome" maxlength="60" placeholder="claricelis@gmail.com">
+                        </p>
 
-                        <p class="nome"> Série </p>
-                        <input class="nome" type="" name="Nome">
-                        <label class="nome">Série do Aluno</label>
+                        <p>
+                            <label class="nome">Série do Aluno</label>
+                            <input class="nome" type="" name="Nome" maxlength="40" placeholder="Quarta Serie">
+                        </p>                      
+                        
+                        <h2>Contato Responsavel:</h2>
+                        <p>
+                            <label class="codigo_area">DDD</label>
+                            <input class="codigo" type="number" name="codigo_area" maxlength="3" placeholder="041">
+                        </p>
+                        <p>
+                            <label class="numero-telefone">Telefone</label>
+                            <input class="number" type="number" maxlength="10" placeholder="99999-9999">                        
+                        </p>                                              
 
-                        <p class="nome"> Telefone Responsável </p>
-                        <input class="codigo" type="" name="codigo_area">
-                        <label class="codigo_area">DDD</label>
-                        <input class="number" type="number"></input>
-                        <label class="numero-telefone">Telefone</label>
+                        <p class="responsável">Pai/Mãe/Responsável</p>
+                            <select class="opcoes" name="assunto">
+                                
+                                <option disabled= "disabled" selected= "selected"> Selecione a opção</option>
+                                <option>Mãe</option>
+                                <option>Pai</option>
+                                <option>Responsável</option>
+                            </select>
 
-                        <p class="responsável">Pai/mãe/responsável</p>
-                        <select class="opcoes" name="assunto">
-                            
-                            <option disabled= "disabled" selected= "selected"> Selecione a opção</option>
-                            <option>Mãe</option>
-                            <option>Pai</option>
-                            <option>Responsável</option>
-                        </select>
-
-                            <p class="responsável">Matricula/ Rematricula</p>
-                        <select class="opcoes" name="assunto">
-                            
-                            <option disabled= "disabled" selected= "selected"> Selecione a opção</option>
-                            <option>Matricula</option>
-                            <option>Rematricula</option>
-                            <option>Atividades extras</option>
-                        </select>
+                        <p class="responsável">Matricula/ Rematricula</p>
+                            <select class="opcoes" name="assunto">
+                                
+                                <option disabled= "disabled" selected= "selected"> Selecione a opção</option>
+                                <option>Matricula</option>
+                                <option>Rematricula</option>
+                                <option>Atividades extras</option>
+                            </select>
                     </div>
                 </form>
             </div>
