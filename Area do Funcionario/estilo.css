@@ -1,3 +1,4 @@
+/*------------------------------------------------- Area Responsaveis -----------------------------------------*/
 body{
     font-family: 'Boogaloo', 'Permanent Marker', 'Roboto';
     /*background-image: url(../img/fundo3.png);
@@ -6,7 +7,7 @@ body{
     color: #341f97;
     font-size: 62.5%;/*100%*/
     
-} 
+} /*Carina*/
 
 a{
     text-decoration: none;
@@ -55,7 +56,76 @@ h1{
     
 }
 
+h2{
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 420px 30px 400px;
+    color: #341f97;
+       
+}
+
+p{
+    font-size: 18px;
+    text-align: center;
+}
+
 .logo{
     width: 300px; /*150px / 1128px*/
     float: left;
+}
+
+button{
+    text-align: center;
+    margin-top: 50px;    
+}
+
+section{
+    text-align: center;   
+}
+
+.section img{
+    display: block;
+    margin-left: 250px;
+}
+
+article{
+    width: 120px; /*264px / 1128px*/
+    float: left;
+    margin-right: 10.24%; /*24px / 1128px*/   
+    font-size: 1.8em; 
+    margin-top: 80px; 
+    text-align: center;
+    
+}
+
+article:last-child{
+    margin-right: 0;
+}
+
+article:first-child{
+    margin-left: 250px;
+}
+
+article:nth-child(5n){
+    margin-left: 250px;
+}
+
+footer{
+    color: #636e72;
+    margin-top: 120px;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+footer p{
+    font-size: 12px;
+    margin-left: 0;
+}
+
+.footer{
+    color: #636e72;
+    margin-top: 620px;
+    margin-left: 0;
+    margin-bottom: 0;
+    text-align: center;
 }
