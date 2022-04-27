@@ -163,7 +163,6 @@ footer p {
 
 .option:hover {
   border: 30px solid #f7f9fa;
-  border-width: 10px;
   background-color: #f7f9fa;
   transition: 1s; //determina o tempo de transição para aplicação dos estilos
 }
