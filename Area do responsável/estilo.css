@@ -74,9 +74,19 @@ p{
     float: left;
 }
 
-button{
+.button{
     text-align: center;
-    margin-top: 50px;    
+    margin-top: 650px;     
+}
+
+button{
+    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 50px; 
+}
+
+.faltas{
+    margin-bottom: 50px;
 }
 
 section{
@@ -93,13 +103,13 @@ article{
     float: left;
     margin-right: 10.24%; /*24px / 1128px*/   
     font-size: 1.8em; 
-    margin-top: 80px; 
+    margin-top: 50px; 
     text-align: center;
     
 }
 
 article:last-child{
-    margin-right: 0;
+    margin-right: 20px;
 }
 
 article:first-child{
@@ -108,6 +118,24 @@ article:first-child{
 
 article:nth-child(5n){
     margin-left: 250px;
+}
+
+.article{
+    width: 180px; /*264px / 1128px*/
+    float: left;
+    margin-right: 24px; /*24px / 1128px*/   
+    font-size: 1.6em; 
+    margin-top: 50px; 
+    text-align: center;
+    
+}
+
+.article:last-child{
+    margin-right: 20px;
+}
+
+.article:first-child{
+    margin-left: 100px;
 }
 
 table{
@@ -125,6 +153,20 @@ table th{
     font-size: 20px;    
 }
 
+.table{
+    width: 900px;
+    height: 100px;
+    margin-left: 180px;
+    margin-right: 420px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+.table th{
+    font-size: 20px;    
+}
+
 footer{
     color: #636e72;
     margin-top: 120px;
@@ -139,7 +181,7 @@ footer p{
 
 .footer{
     color: #636e72;
-    margin-top: 620px;
+    margin-top: 520px;
     margin-left: 0;
     margin-bottom: 0;
     text-align: center;
