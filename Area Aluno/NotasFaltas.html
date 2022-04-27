@@ -17,46 +17,53 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Chat/Forum com Professores</title>
+	<title>Notas e Frequencias</title>
 </head>
 <body>
-
-    <div class="container clearfix">
-        
-        
-
+    <div>
         <header>
-            <a href="index.html"><img src="../img/page-2.png" alt="Colegio Tectivo" class="logo"></a>
-            <h1>Bem Vindo ao Chat!</h1>
-
+			<a href="index.html"><img src="../img/page-2.png" alt="Colegio Tectivo" class="logo"></a>
+			<h1>Notas e Faltas</h1>
 		</header>
-		<section>
+        <section>
 
-            <h2>Preencha os campos abaixo e envie sua mensagem.</h2>
-            <form action="mailto:annagabichaves@gmail.com" method="post" enctype="text/plain">
-                <p>
-                    <label>Seu Nome:</label><br>
-                    <input type="text" name="nome" required> <br>
-            </p>
-                <p>
-                    <label>Seu ano escolar:</label> <br>
-                    <input type="email" name="email" required>
-                </p>
-                <p>
-                    <label>Sua mensagem:</label> <br>
-                <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
-                </p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-            </form>
+			<article class="notasFaltas">
+				<img src="../img/notas.png" alt="Notas">
+				<button><a href="NotasFaltas.html" onclick="func3()"></a> Notas</button>
+			</article>
 
-            <button class="button"><a href="./AreaAluno.html">Voltar</a></button>
+			<article class="notasFaltas">
+				<img src="../img/timer.png" alt="Faltas">
+				<Button onclick="func3()">Frequencias</Button>
+			</article>		
 
+			<!--<button onclick="Nota()" id="button">Ver Notas</button>-->
+
+			<!--<div class="col-12">
+                <div  id= "msgDeErro" class="alert alert-danger d-none"role="alert" >
+                    
+                </div>
+            </div>-->
+
+			<div class="registro">
+				<p>Registro de notas:</p>
+				<table class="table">
+					<tr>
+						<th colspan="1">Nome Aluno</th> <th colspan="1">Disciplina</th><th colspan="1">Nota</th>
+					</tr>
+					<tr>
+						<td><span id="registro_nome">Carina de Araujo Rosa</span></td><td><span id="registro_disciplina">Biologia</span></td><td><span id="registro_nota">7.5</span></td>     
+					</tr>
+				</table>
+			</div>
+			
+			<button class="button"><a href="./AreaAluno.html">Voltar</a></button>
 		</section>
-		<footer>
+        <footer>
             <p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
         </footer>
     </div>
+    
 </body>
 <script src="script.js" defer></script>>
 </html>

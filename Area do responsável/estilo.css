@@ -1,27 +1,18 @@
-/*------------------------------------------------- Area Prof -----------------------------------------*/
+/*------------------------------------------------- Area Responsaveis -----------------------------------------*/
 body{
     font-family: 'Boogaloo', 'Permanent Marker', 'Roboto';
     /*background-image: url(../img/fundo3.png);
     background-size: cover;*/
     background-color: #dfe6e9;
     color: #341f97;
-    font-size: 62.5%;/*100%*/    
-} 
-
-.body{
-    font-family: 'Boogaloo', 'Permanent Marker', 'Roboto';
-    /*background-image: url(../img/fundo3.png);
-    background-size: cover;*/
-    background-color: #dfe6e9;
-    color: #341f97;
     font-size: 62.5%;/*100%*/
-}
+    
+} /*Carina*/
 
 a{
     text-decoration: none;
     font-size: 1em; /*16px*/
     color: #243a69;
-    
 }
 
 a:hover{
@@ -56,10 +47,6 @@ header img{
     margin-left: 60px;
 }
 
-.margemnotas{
-    margin-bottom: 70px;
-}
-
 h1{
     text-align: left;
     font-size: 40px;
@@ -69,24 +56,17 @@ h1{
     
 }
 
-
-
 h2{
     font-size: 24px;
     text-align: center;
-    
-}
-
-h3{
-    font-size: 16px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    padding: 20px 420px 30px 400px;
+    color: #341f97;
+       
 }
 
 p{
     font-size: 18px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .logo{
@@ -94,9 +74,18 @@ p{
     float: left;
 }
 
-section{
+button{
     text-align: center;
-   
+    margin-top: 50px;    
+}
+
+section{
+    text-align: center;   
+}
+
+.section img{
+    display: block;
+    margin-left: 250px;
 }
 
 article{
@@ -121,29 +110,17 @@ article:nth-child(5n){
     margin-left: 250px;
 }
 
-.form{
-    margin-top: 70px;
+footer{
+    color: #636e72;
+    margin-top: 120px;
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
-.button{
-    text-align: center;
-    margin-top: 50px;
-    
+footer p{
+    font-size: 12px;
+    margin-left: 0;
 }
-
-button{
-    margin-bottom: 50px;
-}
-
-.label{
-    font-size: 16px;
-}
-
-.esqueceu{
-    font-size: 14px;
-}
-
-
 
 .footer{
     color: #636e72;
@@ -152,64 +129,3 @@ button{
     margin-bottom: 0;
     text-align: center;
 }
-
-footer{
-    color: #636e72;
-    margin-top: 120px;
-    margin-left: 0;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-footer p{
-    font-size: 12px;
-    margin-left: 0;
-}
-
-table{
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 16px;
-}
-
-table th{
-    font-size: 14px;
-}
-
-.table{
-    text-align: center;
-    font-size: 16px;    
-    margin-left: 100px;
-}
-
-
-/* CSS Relatorio Evolucao  print */
-.dados{
-    padding: 20px;
-}
-.print{
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 30px;
-    width: 600px;
-    display: none;
-}
-
-@media print {
-    .print{
-        display: block;
-    }
-    .dados{
-        display: none;
-    }
-}
-
-/* css notas */
-/* #listaRegistros{display: none; }
-        #cadastroRegistro{display: none;}
-
-        body[page=lista]#listaRegistro{ display: block;}
-        body[page=cadatro]#cadastroRegistro{display: block;} */

@@ -18,20 +18,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="../img/page-2.png"> -->
-    <style>
-        #listaRegistros{display: none; }
-        #cadastroRegistro{display: none;}
-
-        body[page=lista]#listaRegistros{
-            display: block;
-        }
-        body[page=cadatro]#cadastroRegistro{
-            display: block;
-        }
-    </style>
 </head>
-<body page='lista'>
+<body>
     
     <div class="container clearfix">
         <header class="margemnotas">
@@ -40,47 +28,33 @@
             <h1>Registrar Notas</h1>
             
         </header>
-    <section>
+        <section>
+            <p>
+                <label > Nome</label>
+                <input type="text" id=nome>
+            </p>
+            <p>                
+                <label >Nota</label>
+                <input type="number" id="nota">
+            </p>
+        
+                <button onclick="gravarNota()" id="button" >Gravar</button>
 
-        <div id="cadastroRegistro">
-
-            <table>
-                <thead>
+            <div>
+                <h2>Registro de notas:</h2>
+                <table>
                     <tr>
-                        <th>RGM</th>
-                        <th>Nome</th>
-                        <th>Nota</th>
-                        <th>Disciplina</th>
+                        <th>Nome</th> <th>Nota</th>
                     </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-
-        </div>
-        <div id="listaCadastro">
-            <p>
-                <label>RGM</label><br>
-                <input type="number">
-            </p>
-            <p>
-                <label>Nome</label><br>
-                <input type="text">
-            </p>
-            <p>
-                <label>Nota</label><br>
-                <input type="number">
-            </p>
-            <p>
-                <label>Disciplina</label><br>
-                <input type="text">
-            </p>
-            
-        </div>
-        <button onclick="vizualizae()">Gravar</button>
+                    <tr>
+                        <td><span id="registro_nome"></span></td><td><span id="registro_nota"></span></td>     
+                    </tr>
+                </table>
+            </div>
 
 
-        <button><a href="./AreaProf.html">Voltar</a></button>
-    </section>
+            <button class="button"><a href="./AreaProf.html">Voltar</a></button>
+        </section>
     <footer>
 		<p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
 	</footer>

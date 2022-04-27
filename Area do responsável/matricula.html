@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Matricula e Rematricula</title>
+</head>
+<body>
+    <div class="container clearfix">
+        <header>
+		
+            <a href="index.html"><img src="../img/page-2.png" alt="Colegio Tectivo" class="logo"></a>
+            <h1>Matricula Aluno</h1>
+            
+        </header>        
+        <section>          
+            <div class= "conteudo">
+                <h2>Dados Cadastrais do Aluno:</h2>
+                <form>                
+                    <div id="nome">
+                        
+                        <p> 
+                            <label class="nome">Nome completo</label>
+                            <input class="nome" type="" name="Nome" maxlength="50" placeholder="Maria Eduarda Fonseca">
+                        </p>
+
+                        <p>
+                            <label class="nome">Nome responsável</label>
+                            <input class="nome" type="" name="Nome responsável" maxlength="50" placeholder="Clarice Lispector">                        
+                        </p>
+
+                        <p>
+                            <label class="nome">Email responsável</label> 
+                            <input class="Email" type="" name="Nome" maxlength="60" placeholder="claricelis@gmail.com">
+                        </p>
+
+                        <p>
+                            <label class="nome">Série do Aluno</label>
+                            <input class="nome" type="" name="Nome" maxlength="40" placeholder="Quarta Serie">
+                        </p>                      
+                        
+                        <h2>Contato Responsavel:</h2>
+                        <p>
+                            <label class="codigo_area">DDD</label>
+                            <input class="codigo" type="number" name="codigo_area" maxlength="3" placeholder="041">
+                        </p>
+                        <p>
+                            <label class="numero-telefone">Telefone</label>
+                            <input class="number" type="number" maxlength="10" placeholder="99999-9999">                        
+                        </p>                                              
+
+                        <p class="responsável">Pai/Mãe/Responsável</p>
+                            <select class="opcoes" name="assunto">
+                                
+                                <option disabled= "disabled" selected= "selected"> Selecione a opção</option>
+                                <option>Mãe</option>
+                                <option>Pai</option>
+                                <option>Responsável</option>
+                            </select>
+
+                        <p class="responsável">Matricula/ Rematricula</p>
+                            <select class="opcoes" name="assunto">
+                                
+                                <option disabled= "disabled" selected= "selected"> Selecione a opção</option>
+                                <option>Matricula</option>
+                                <option>Rematricula</option>
+                                <option>Atividades extras</option>
+                            </select>
+                    </div>
+                </form>
+            </div>
+
+            <button><a href="./arearesponsaveis.html">Voltar</a></button>
+        </section>
+        <footer>
+            <p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
+        </footer>
+    </div>
+</body>
+</html>

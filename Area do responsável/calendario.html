@@ -2,9 +2,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-	<meta name="author" content="Carina Rosa">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="estilo.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
@@ -17,46 +17,29 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Login Aluno</title>
-    
+    <title>Material de estudo</title>
 </head>
 <body>
     <div class="container clearfix">
         <header>
 		
             <a href="index.html"><img src="../img/page-2.png" alt="Colegio Tectivo" class="logo"></a>
-            <h1>Login Area do Aluno</h1>
+            <h1>Calendario Escolar</h1>
             
         </header>
-        <section>
-            <h2>Preencha os campos abaixo para efetuar login.</h2>
-            <form>
-                <p>
-                    <label>Login:</label><br>
-                    <input type="text" id="login" required>
-                </p>
-                <p>
-                    <label>Senha:</label><br>
-                    <input type="password" id="senha" required>
-                </p>
-                <div class="checkbox">
-                    <input type="checkbox">Lembre-me
-                          
-                </div>
-                <p>
-                    <input type="submit" onclick="logar(); return false"> 
-                </p>
-            </form>
+        <section class="section">
 
-            <p class="esqueceu"><a href="#">Esqueceu a senha?</a></p>
+            <h2>Segue calendario para visualização das atividades futuras:</h2>
 
+            
+                <img src="../img/calendarioescolar.png" alt="calendario">
+            
+
+            <button><a href="./arearesponsaveis.html">Voltar</a></button>
         </section>
         <footer>
-            <p>2022. Trabalho para a disciplina de Tópicos Especiais de Sistemas JS.</p>
+            <p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
         </footer>
     </div>
-   
-
 </body>
-<script src="login.js"></script>
 </html>
