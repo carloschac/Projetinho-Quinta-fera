@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Email</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container clearfix">
+        <header>
+                
+            <a href="index.html"><img src="../img/page-2.png" alt="Colegio Tectivo" class="logo"></a>
+            <h1>Enviar Email</h1>
+            
+        </header>
+        <section>
+            <h2>Preencha os campos abaixo e envie sua mensagem.</h2>
+            <form action="mailto:annagabichaves@gmail.com" method="post" enctype="text/plain">
+                <p>
+                    <label>Seu Nome:</label><br>
+                    <input type="text" name="nome" required> <br>
+            </p>
+                <p>
+                    <label>Email:</label> <br>
+                    <input type="email" name="email" required>
+                </p>
+                <p>
+                    <label>Sua mensagem:</label> <br>
+                <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
+                </p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </form>
+
+            <button class="button"><a href="./arearesponsaveis.html">Voltar</a></button>
+        </section>
+        <footer>
+            <p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
+        </footer>
+    </div>
+</body>
+</html>
