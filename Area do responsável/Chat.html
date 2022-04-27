@@ -17,46 +17,46 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Login Aluno</title>
-    
+    <title>Chat/Forum com Professores</title>
 </head>
 <body>
+
     <div class="container clearfix">
+        
+        
+
         <header>
-		
             <a href="index.html"><img src="../img/page-2.png" alt="Colegio Tectivo" class="logo"></a>
-            <h1>Login Area do Aluno</h1>
-            
-        </header>
-        <section>
-            <h2>Preencha os campos abaixo para efetuar login.</h2>
-            <form>
+            <h1>Bem Vindo ao Chat!</h1>
+
+		</header>
+		<section>
+
+            <h2>Preencha os campos abaixo e envie sua mensagem.</h2>
+            <form action="mailto:annagabichaves@gmail.com" method="post" enctype="text/plain">
                 <p>
-                    <label>Login:</label><br>
-                    <input type="text" id="login" required>
+                    <label>Seu Nome:</label><br>
+                    <input type="text" name="nome" required> <br>
+            </p>
+                <p>
+                    <label>Seu ano escolar:</label> <br>
+                    <input type="email" name="email" required>
                 </p>
                 <p>
-                    <label>Senha:</label><br>
-                    <input type="password" id="senha" required>
+                    <label>Sua mensagem:</label> <br>
+                <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
                 </p>
-                <div class="checkbox">
-                    <input type="checkbox">Lembre-me
-                          
-                </div>
-                <p>
-                    <input type="submit" onclick="logar(); return false"> 
-                </p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
             </form>
 
-            <p class="esqueceu"><a href="#">Esqueceu a senha?</a></p>
+            <button class="button"><a href="./arearesponsaveis.html">Voltar</a></button>
 
-        </section>
-        <footer>
-            <p>2022. Trabalho para a disciplina de Tópicos Especiais de Sistemas JS.</p>
+		</section>
+		<footer>
+            <p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
         </footer>
     </div>
-   
-
 </body>
-<script src="login.js"></script>
+
 </html>

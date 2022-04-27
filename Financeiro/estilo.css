@@ -1,4 +1,4 @@
-/*------------------------------------------------- Area Secretaria -----------------------------------------*/
+/*------------------------------------------------- Area Financeiro -----------------------------------------*/
 body{
     font-family: 'Boogaloo', 'Permanent Marker', 'Roboto';
     /*background-image: url(../img/fundo3.png);
@@ -102,7 +102,7 @@ article:last-child{
 }
 
 article:first-child{
-    margin-left: 200px;
+    margin-left: 500px;
 }
 
 table{

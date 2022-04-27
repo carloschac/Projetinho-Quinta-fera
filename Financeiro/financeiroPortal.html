@@ -17,34 +17,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Secretaria controle de Frequencia</title>
-    
+    <title>Portal do Financeiro</title>
   </head>
   <body>
     <div class="container clearfix">
       <header>
 		
         <a href="index.html"><img src="../img/page-2.png" alt="Colegio Tectivo" class="logo"></a>
-        <h1>Sistema de Controle de Frequencia</h1>
+        <h1>Portal do Financeiro</h1>
         
-      </header>     
-      
-      <section>
-        <div class="Controle de frequência">
-          <p>
-          <label for="text">Digite o nome do aluno:</label>
-          <input type="text" name="search" placeholder="Carlos Henrique" id="aluno">
-          </p>
-        
-          <button onclick="alerta()">Enviar</button>
-        </div>
-
-        <button><a href="./AreaSecretaria.html">Voltar</a></button>
+      </header>    
+      <section class="direcionamentos">
+          <article>
+            <a href="financeiroEmissao.html"
+              ><img src="../img/Atvextra.png" alt="Consultar Solicitações" /> Consultar Solicitação para
+              Emissão</a>
+          </article>
+          <article>
+            <a href="financeiroBoleto.html"><img src="../img/Boleto2.png" alt="Visualizar Boletos">Ver Boletos</a>
+          </article>
+          
       </section>
-      <footer>
+      
+      <footer class="footer">
         <p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
       </footer>
     </div>
   </body>
-  <script src="frequencia.js"></script>
 </html>

@@ -17,46 +17,35 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Login Aluno</title>
-    
+	<title>Notas</title>
 </head>
 <body>
-    <div class="container clearfix">
+    <div>
         <header>
-		
-            <a href="index.html"><img src="../img/page-2.png" alt="Colegio Tectivo" class="logo"></a>
-            <h1>Login Area do Aluno</h1>
-            
-        </header>
+			<a href="index.html"><img src="../img/page-2.png" alt="Colegio Tectivo" class="logo"></a>
+			<h1>Notas</h1>
+		</header>
         <section>
-            <h2>Preencha os campos abaixo para efetuar login.</h2>
-            <form>
-                <p>
-                    <label>Login:</label><br>
-                    <input type="text" id="login" required>
-                </p>
-                <p>
-                    <label>Senha:</label><br>
-                    <input type="password" id="senha" required>
-                </p>
-                <div class="checkbox">
-                    <input type="checkbox">Lembre-me
-                          
-                </div>
-                <p>
-                    <input type="submit" onclick="logar(); return false"> 
-                </p>
-            </form>
-
-            <p class="esqueceu"><a href="#">Esqueceu a senha?</a></p>
-
-        </section>
+			
+			<div class="registro">
+				<h2>Registro de notas:</h2>
+				<table class="table">
+					<tr>
+						<th colspan="1">Nome Aluno</th> <th colspan="1">Disciplina</th><th colspan="1">Nota</th>
+					</tr>
+					<tr>
+						<td><span id="registro_nome">Carina de Araujo Rosa</span></td><td><span id="registro_disciplina">Biologia</span></td><td><span id="registro_nota">7.5</span></td>     
+					</tr>
+				</table>
+			</div>
+			
+			<button class="button"><a href="./arearesponsaveis.html">Voltar</a></button>
+		</section>
         <footer>
-            <p>2022. Trabalho para a disciplina de Tópicos Especiais de Sistemas JS.</p>
+            <p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
         </footer>
     </div>
-   
-
+    
 </body>
-<script src="login.js"></script>
+<script src="script.js" defer></script>>
 </html>
