@@ -5,13 +5,16 @@ function func1() {
 }
 
 /*aba Atividades Extras*/
-
+var solicitacaoinscrever = document.getElementById('solicitacaoinscrever')
+var buttoninscrever = document.getElementById('buttoninscrever')
 function func2() {
-    window.alert('Atividade Extra ainda não esta disponivel para ingresso! Tente mais tarde!')
+    solicitacaoinscrever.classList.add('d-none');
+    alert('Atividade Extra ainda não esta disponivel para ingresso! Tente mais tarde!');
 }
+buttoninscrever.addEventListener('click', func2);
 
 function func3() {
-    window.alert('Ainda não esta funcionando. Assim que ajustarmos te avisaremos.')
+    window.alert('Ainda não esta funcionando. Assim que ajustarmos te avisaremos.');
     /*window.prompt('Digite seu numero para avisarmos por SMS')
     window.alert('Obrigado(a)! Até a proxima.')*/
 }

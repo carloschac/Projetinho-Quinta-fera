@@ -193,6 +193,22 @@ table th{
     width: 50px;
 }
 
+.atvextra{
+    width: 900px;
+    height: 50px;
+    margin-left: 200px;
+    margin-right: 420px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.atvextra td{
+    width: 50px;
+}
+
 p{
     font-size: 18px;
     text-align: center;

@@ -4,26 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Login Financeiro</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Login Funcionario</title>
   </head>
   <body>
     <div class="container clearfix">
-      <header class="header">
-        <a href="index.html"
-          ><img src="../img/page-2.png" alt="Colegio Tectivo" class="logo"
-        /></a>
+      <header>
+		
+        <a href="index.html"><img src="../img/page-2.png" alt="Colegio Tectivo" class="logo"></a>
+        <h1>Login Financeiro</h1>
+        
       </header>
+
       <section class="cabeçalho">
         <div class="titulo">
-          <h1 class="tituloh1">Faça seu login</h1>
+          <h2 class="tituloh1">Faça seu login</h2>
           <p>
             Insira suas credênciais de acesso que foram fornecidas pela
             instituição.
           </p>
         </div>
-      </section>
-      <section class="credenciais">
+
+        <form>
+          <p>
+              <label>Login:</label><br>
+              <input type="text" id="login" required>
+          </p>
+          <p>
+              <label>Senha:</label><br>
+              <input type="password" id="senha" required>
+          </p>
+          <div class="checkbox">
+            <input type="checkbox">Lembre-me                  
+          </div>
+          <p>
+              <input type="submit" onclick="logar(); return false"> 
+          </p>
+      </form>
+
+      <p class="esqueceu"><a href="#">Esqueceu a senha?</a></p>
+      
+
+      <!--<p class="esqueceu"><a href="#">Esqueceu a senha?</a></p>
+      
         <label for="text">Login</label>
         <input type="text" required id="login" />
         <label for="text">Senha</label>
@@ -31,7 +66,7 @@
         <button class="forgotkey">Esqueci minha senha</button>
         <input type="submit" onclick="logar(); return false" />
       </section>
-    </div>
+    </div>-->
     <footer>
       <p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
   </footer>
