@@ -4,9 +4,9 @@ function logar() {
 
   if (login == 'admin' && senha == 'admin') {
     alert(
-      'Logado com sucesso! Clique em OK para ser redirecionado para a Area da Secretaria.'
+      'Logado com sucesso! Clique em OK para ser redirecionado para a Area Financeira.'
     )
-    location.href = 'secretariaPortal.html'
+    location.href = 'financeiroPortal.html'
   } else {
     alert(
       'Erro! Verifique se os campos estão em branco OU se seu login e senha estão corretos.'
