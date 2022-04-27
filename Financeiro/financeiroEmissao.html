@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financeiro</title>
+  </head>
+  <body>
+    <div class="container clearfix">
+      <header class="header">
+        <a href="index.html"
+          ><img src="../img/page-2.png" alt="Colegio Tectivo" class="logo"
+        /></a>
+      </header>
+      <h1>Sistema de Emissão de Boletos</h1>
+      <section class="emissao">
+        <label for="text"
+          >Digíte o código da solicitação para localizar o boleto:
+        </label>
+        <input id="solicitacao" type="text" required maxlength="10" />
+        <input type="submit" onclick="localizar(); return false" />
+      </section>
+    </div>
+  </body>
+  <script src="emissao.js"></script>
+</html>
