@@ -1,4 +1,4 @@
 function registrar() {
   alert('Nota registrada!')
-  location.href = 'secretariaPortal.html'
+  location.href = 'AreaSecretaria.html'
 }
