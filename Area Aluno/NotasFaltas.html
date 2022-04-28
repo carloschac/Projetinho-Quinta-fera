@@ -29,16 +29,16 @@
 
 			<article class="notasFaltas">
 				<img src="../img/notas.png" alt="Notas">
-				<button onclick="func2()"> Notas</button>
+				<input type="button" value="Notas" onclick="func2()"/>
 			</article>
 
 			<article class="notasFaltas">
 				<img src="../img/timer.png" alt="Faltas">
-				<Button onclick="func3()">Frequencias</Button>
+				<input type="button" value="Faltas" onclick="func3()"/>
 			</article>		
 
 			
-			<div onchange="func2(this.value)" id="infosNotas">
+			<div id="infosNotas" class="hidden">
 				<p>Registro de notas:</p>
 				<table class="table">
 					<tr>
@@ -46,6 +46,18 @@
 					</tr>
 					<tr>
 						<td><span id="registro_nome">Carina de Araujo Rosa</span></td><td><span id="registro_disciplina">Biologia</span></td><td><span id="registro_nota">7.5</span></td>     
+					</tr>
+				</table>
+			</div>
+
+			<div id="infosFaltas" class="hidden">
+				<p>Registro de Faltas:</p>
+				<table class="table">
+					<tr>
+						<th colspan="1">Nome Aluno</th> <th colspan="1">Disciplina</th><th colspan="1">Quant Faltas</th>
+					</tr>
+					<tr>
+						<td><span id="registro_nome">Carina de Araujo Rosa</span></td><td><span id="registro_disciplina">Biologia</span></td><td><span id="registro_nota">2</span></td>     
 					</tr>
 				</table>
 			</div>
@@ -60,9 +72,23 @@
 </body>
 <!-- <script src="script.js" defer></script>> -->
 <script>
-	function func2(value) {
-		window.alert(value);
+	function func2() {
+		if (document.getElementById('infosNotas').style.display == 'none') {
+			document.getElementById('infosNotas').style.display = 'block';
+		}else{
+			document.getElementById('infosNotas').style.display = 'none';
+		}
+		
 	}
+
+	function func3() {
+		if (document.getElementById('infosFaltas').style.display == 'none') {
+			document.getElementById('infosFaltas').style.display = 'block';
+		}else{
+			document.getElementById('infosFaltas').style.display = 'none';
+		}
+	}
+
 
 </script>
 </html>

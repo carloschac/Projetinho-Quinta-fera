@@ -43,6 +43,10 @@ nav li a{
     
 }
 
+/* ---------- */
+
+/* Corpo Site */
+
 .container{
     max-width: 1320px;
     margin: 0 auto; 
@@ -85,6 +89,10 @@ h1{
     float: left;
 }
 
+/* ------------- */
+
+/* meio do site */
+
 section{
     text-align: center;
    
@@ -115,6 +123,8 @@ article:first-child{
     font-size: 16px;
 }*/
 
+/* ------------- */
+
 /*ajuste article pg notasfaltas*/
 .notasFaltas{
     width: 110px;
@@ -138,7 +148,7 @@ article:first-child{
     text-align: center;  
 }
 
-
+/* ------------- */
 
 /*Area Aluno*/
 
@@ -161,6 +171,7 @@ h2{
 h2 a{
     color: #341f97;
 }
+/* ------------- */
 
 /*Table de todas as pgs*/
 
@@ -185,7 +196,7 @@ table th{
     margin-left: 0px;
     margin-top: 60px;
     margin-bottom: 30px;
-    margin-right: 15px;
+    margin-right: 450px;
     padding: 0;
 }
 
@@ -213,18 +224,21 @@ p{
     font-size: 18px;
     text-align: center;
 }
+/* ------------- */
 
 /*Botão voltar de todas as pgs*/
 
 button{
     text-align: center;
     margin-top: 50px;
-    
+    position: absolute;
+    margin-bottom: 15px;
 }
 
 .esqueceu{
     font-size: 14px;
 }
+/* ------------- */
 
 /*Chat profs*/
 
@@ -233,6 +247,11 @@ button{
     height: 200px;
     text-align: justify;
     border-radius: 15px;
+}
+/* ------------- */
+
+.hidden{
+    display: none;
 }
 
 /*Footer todas as pgs*/
@@ -243,12 +262,14 @@ footer{
     margin-top: 120px;
     margin-left: 0;
     margin-bottom: 0;
+    position: relative;
 }
 
 footer p{
     font-size: 12px;
     margin-left: 0;
 }
+/* ------------- */
 /*
 
 https://flatuicolors.com/palette/ca
