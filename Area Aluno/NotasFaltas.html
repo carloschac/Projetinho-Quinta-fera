@@ -34,32 +34,40 @@
 
 			<article class="notasFaltas">
 				<img src="../img/timer.png" alt="Faltas">
-				<input type="button" value="Faltas" onclick="func3()"/>
+				<input type="button" value="Faltas" onclick="func3()" />
 			</article>		
 
 			
 			<div id="infosNotas" class="hidden">
-				<p>Registro de notas:</p>
-				<table class="table">
-					<tr>
-						<th colspan="1">Nome Aluno</th> <th colspan="1">Disciplina</th><th colspan="1">Nota</th>
-					</tr>
-					<tr>
-						<td><span id="registro_nome">Carina de Araujo Rosa</span></td><td><span id="registro_disciplina">Biologia</span></td><td><span id="registro_nota">7.5</span></td>     
-					</tr>
-				</table>
+				
+					<table class="table">
+						<tr>
+							<th colspan="3">Registro de Notas:</th>
+						</tr>
+						<tr>
+							<th colspan="1">Nome Aluno</th> <th colspan="1">Disciplina</th><th colspan="1">Nota</th>
+						</tr>
+						<tr>
+							<td><span id="registro_nome">Carina de Araujo Rosa</span></td><td><span id="registro_disciplina">Biologia</span></td><td><span id="registro_nota">7.5</span></td>     
+						</tr>
+					</table>
+				
 			</div>
 
 			<div id="infosFaltas" class="hidden">
-				<p>Registro de Faltas:</p>
-				<table class="table">
-					<tr>
-						<th colspan="1">Nome Aluno</th> <th colspan="1">Disciplina</th><th colspan="1">Quant Faltas</th>
-					</tr>
-					<tr>
-						<td><span id="registro_nome">Carina de Araujo Rosa</span></td><td><span id="registro_disciplina">Biologia</span></td><td><span id="registro_nota">2</span></td>     
-					</tr>
-				</table>
+				
+					<table class="table">
+						<tr>
+							<th colspan="3">Registro de Faltas:</th>
+						</tr>
+						<tr>
+							<th colspan="1">Nome Aluno</th> <th colspan="1">Disciplina</th><th colspan="1">Quant Faltas</th>
+						</tr>
+						<tr>
+							<td><span id="registro_nome">Carina de Araujo Rosa</span></td><td><span id="registro_disciplina">Biologia</span></td><td><span id="registro_nota">2</span></td>     
+						</tr>
+					</table>
+				
 			</div>
 			
 			<button class="button"><a href="./AreaAluno.html">Voltar</a></button>
@@ -73,19 +81,21 @@
 <!-- <script src="script.js" defer></script>> -->
 <script>
 	function func2() {
-		if (document.getElementById('infosNotas').style.display == 'none') {
-			document.getElementById('infosNotas').style.display = 'block';
-		}else{
+		if (document.getElementById('infosNotas').style.display == 'block') {
 			document.getElementById('infosNotas').style.display = 'none';
+		}else{
+			document.getElementById('infosNotas').style.display = 'block';
 		}
 		
 	}
 
 	function func3() {
-		if (document.getElementById('infosFaltas').style.display == 'none') {
-			document.getElementById('infosFaltas').style.display = 'block';
-		}else{
+		if (document.getElementById('infosFaltas').style.display == 'block') {
 			document.getElementById('infosFaltas').style.display = 'none';
+			
+		}else{
+			document.getElementById('infosFaltas').style.display = 'block';
+			
 		}
 	}
 
