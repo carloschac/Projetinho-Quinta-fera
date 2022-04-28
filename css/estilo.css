@@ -159,8 +159,8 @@ footer p {
   border-width: 20px;
   background-color: #f7f9fa;
   opacity: 0.8;
-  transition: 1s; determina o tempo de transição para volta do estado normal */
-  font-size: 40px;
+  transition: 1s; /*determina o tempo de transição para volta do estado normal */ */
+  /* font-size: 40px; */
   cursor: pointer;
 }
 
@@ -168,5 +168,5 @@ footer p {
   border: 30px solid #dfe6e9;
   background-color: #dfe6e9fb;
   /* opacity: 0.8; */
-  transition: 1s; //determina o tempo de transição para aplicação dos estilos
+  transition: 1s; /*//determina o tempo de transição para aplicação dos estilos*/
 }
