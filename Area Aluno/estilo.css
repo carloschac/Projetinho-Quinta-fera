@@ -195,9 +195,9 @@ table th{
 .table{
     width: 1320px;
     height: 20px;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     margin-right: 550px;
     padding: 0;
 }
@@ -236,7 +236,6 @@ button{
     margin-top: 50px;
     /* position: absolute; */
     bottom: 150px;
-    display: contents;
     
     /* text-align: center;
     bottom: 50px;
@@ -276,7 +275,7 @@ footer{
     margin-top: 250px;
     /*margin-top: 120px;*/
     margin-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     
 }
 

@@ -31,7 +31,40 @@
 		<section>
 			
         	<p>Segue material para estudo das disciplinas disponiveis para você.</p>
+
 			<!--Queria puxar as postagem da aba do prof pra ca-->
+			<table>
+				<tr>
+					<th>Materia</th>
+					<th>Turma</th>					
+				</tr>
+				<tr>
+					<td>Educação Financeira</td>
+					<td>4ª Serie</td>
+					<td><input type="button" value="Baixar" onclick="baixar()"></td>					
+				</tr>
+				<tr>
+					<td>Educação Fisica</td>
+					<td>4ª Serie</td>
+					<td><input type="button" value="Baixar" onclick="baixar()"></td>
+				</tr>
+				<tr>
+					<td>Lingua Inglesa</td>
+					<td>4ª Serie</td>
+					<td><input type="button" value="Baixar" onclick="baixar()"></td>
+				</tr>
+				<tr>
+					<td>Biologia</td>
+					<td>4ª Serie</td>
+					<td><input type="button" value="Baixar" onclick="baixar()"></td>
+				</tr>
+				<tr>
+					<td>Historia</td>
+					<td>4ª Serie</td>
+					<td><input type="button" value="Baixar" onclick="baixar()"></td>
+				</tr>
+			</table>
+			
 
 			<p>Clicando aqui você pode consultar as notas e faltas de cada disciplina.</p>
 			<!--Queria puxar as postagem do prof nas abas frequencia e notas pra ca-->
@@ -45,5 +78,10 @@
     </div>
     
 </body>
-<script src="script.js" defer></script>>
+<!-- <script src="script.js" defer></script>> -->
+<script>
+	function baixar() {
+		window.alert('Conteúdo baixado!');
+	}
+</script>
 </html>
