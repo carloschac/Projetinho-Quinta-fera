@@ -43,6 +43,7 @@ Area do Funcionario:
 
 Funcionalidades em comum:
 
+- [ ] Login (Geral)
 - [ ] Chat/Email (Geral)
 - [ ] Agenda/Grade (Lançar) prof, secretaria
 - [ ] Agenda (consultar) Aluno, pais
