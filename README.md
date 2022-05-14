@@ -1,35 +1,55 @@
 # Projetinho-Quinta-fera
 
+Funcionalidades do Projeto por pastas
+
 Area do Aluno:
 
-*agenda de provas
-*aulas
-*atividades extras
-*matricular em atividades extras
-*chat/forum com professores
-*Material para estudo, dividido por disciplina
+- [ ] Agenda (Consultar)
+- [ ] Atv Extras/Matricula (Cadastrar)
+- [ ] Disciplina/Nota/Falta/Baixar Material
+- [ ] Chat/Email
 
+***
 Area do Professor:
 
-*Agenda de provas
-*Aprovar matricula
-*relatório de evolução
-*Material para estudo
-*Faltas
-*Notas
-\*chat
+- [ ] Agenda/Grade (Lançar)
+- [ ] Notas (Lançar)
+- [ ] Faltas (Lançar)
+- [ ] Material didatico (Lançar)
+- [ ] Atv Extras/Matricula (Aprovar)
+- [ ] Relatório de Evolução (Emitir)
+- [ ] Chat/Email
 
+***
+Area dos Responsaveis:
+
+- [ ] Agenda (Consultar)
+- [ ] Atv Extras/Matricula (Cadastrar)
+- [ ] Disciplina/Nota/Falta/Baixar Material
+- [ ] Chat/Email
+- [ ] Gerar Boleto Atv Extra/Mensalidade (Consultar)
+
+***
 Area do Funcionario:
 
-- Secretaria
+- [ ] Agenda/Grade (Lançar)
+- [ ] Notas (Lançar)
+- [ ] Faltas (Lançar)
+- [ ] Atv Extras/Matricula (Aprovar)
+- [ ] Chat/Email
+- [ ] Gerar Boleto Atv Extra/Mensalidade (Emitir)
 
-*Matriculas
-*Frequencia
-*chat
-*Notas
-\*Controle aprovações matriculas
+***
 
-- Financeiro
+Funcionalidades em comum:
 
-*Atividades extras
-*Emissão Boleto
+- [ ] Chat/Email (Geral)
+- [ ] Agenda/Grade (Lançar) prof, secretaria
+- [ ] Agenda (consultar) Aluno, pais
+- [ ] Notas (Lançar) prof, secretaria
+- [ ] Faltas (Lançar) prof, secretaria
+- [ ] Disciplina/Nota/Falta/Baixar Material - Aluno, pais
+- [ ] Atv Extras/Matricula (Aprovar) prof, secretaria
+- [ ] Atv Extras/Matricula (Cadastrar) Aluno, pais
+
+
