@@ -4,7 +4,7 @@ Funcionalidades do Projeto por pastas
 
 Area do Aluno:
 
-- [ ] Agenda (Consultar)
+- [x] Agenda (Consultar)
 - [ ] Atv Extras/Matricula (Cadastrar)
 - [ ] Disciplina/Nota/Falta/Baixar Material
 - [ ] Chat/Email
