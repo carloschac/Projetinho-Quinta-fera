@@ -2,15 +2,40 @@
     {
         "nome":"Danielle Yost",
         "email":"Vanessa.Berge@hotmail.com",
-        "turmas":[],
         "telefone":"698.274.3282 x1847",
-        "id":"1"
+        "id":"1",
+        "Disciplina":
+        [
+            {
+                "name":"Matematica",
+                "turma": "Quinto ano"
+                
+            },
+            {
+                "name":"Portugues",
+                "turma": "Sexto ano"
+                
+            }
+        ]
     },
     {
         "nome":"Karl Cruickshank",
         "email":"Johanna_Nolan26@yahoo.com",
         "turmas":[],
         "telefone":"233-851-4516",
-        "id":"2"
+        "id":"2",
+        "Disciplina":
+        [
+            {
+                "name":"Geografia",
+                "turma": "Sexto ano"
+                
+            },
+            {
+                "name":"Artes",
+                "turma": "Quinto ano"
+                
+            }
+        ]
     }
 ]
