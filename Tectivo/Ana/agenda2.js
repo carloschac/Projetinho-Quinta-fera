@@ -2,18 +2,14 @@ const objs =[
     {
         "Nome" : "Ana Gabriela de Chaves",
         "Turma" : "Sexto ano",
-        "Email": "aninha@gmail.com",
-        "Compromissos" : ["Prova", "Futsal"],
-        "Datas" : ["21.7", "24.6"]
+        "Email": "aninha@gmail.com"
 
     },
 
     {
         "Nome" : "Gabriela de Chaves",
         "Turma" : "Segundo ano",
-        "Email": "gabi@gmail.com",
-        "Compromissos" : ["Prova", "Volei"],
-        "Datas" : ["28.7", "22.6"]
+        "Email": "gabi@gmail.com"
 
     }
 ]
@@ -32,6 +28,6 @@ console.log(typeof objs);
 
  objson.map((agenda2) => {
      console.log(agenda2.Nome);
-     console.log(agenda2.Compromissos);
-     console.log(agenda2.Datas);
+     console.log(agenda2.Turma);
+     console.log(agenda2.Email);
  })
