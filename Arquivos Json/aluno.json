@@ -1,1 +1,46 @@
-[{"nome":"Tommy Fay","idade":10,"email":"Mallie69@gmail.com","telefone":"(833) 265-9879","turma":"turma 1","responsavel":"Bryant Walter","disciplinas":"disciplinas 1","notas":47,"faltas":23,"id":"1","ativextra":[{"name":"name 1","turno":"turno 1","id":"1","alunoId":"1"}]},{"nome":"Julian Hane","idade":48,"email":"Benny_Nader@yahoo.com","telefone":"630-321-2460","turma":"turma 2","responsavel":"Timothy Klocko","disciplinas":"disciplinas 2","notas":64,"faltas":87,"id":"2","ativextra":[{"name":"name 2","turno":"turno 2","id":"2","alunoId":"2"}]}]
+[
+    {
+        "nome":"Tommy Fay",
+        "idade":10,
+        "email":"Mallie69@gmail.com",
+        "telefone":"(833) 265-9879",
+        "turma":"turma 1",
+        "responsavel":"Bryant Walter",
+        "disciplinas":"disciplinas 1",
+        "notas":47,
+        "faltas":23,
+        "id":"1",
+        
+        "ativextra":
+        [
+            {
+                "name":"name 1",
+                "turno":"turno 1",
+                "id":"1",
+                "alunoId":"1"
+            }
+        ]
+    },
+    {
+        "nome":"Julian Hane",
+        "idade":48,
+        "email":"Benny_Nader@yahoo.com",
+        "telefone":"630-321-2460",
+        "turma":"turma 2",
+        "responsavel":"Timothy Klocko",
+        "disciplinas":"disciplinas 2",
+        "notas":64,
+        "faltas":87,
+        "id":"2",
+        
+        "ativextra":
+        [
+            {
+                "name":"name 2",
+                "turno":"turno 2",
+                "id":"2",
+                "alunoId":"2"
+            }
+        ]
+    }
+]
