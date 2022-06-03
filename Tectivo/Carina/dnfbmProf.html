@@ -50,7 +50,7 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
               <h1 class="display-4">Grade Curricular 2022</h1>
-              <p class="lead">Aqui você pode consultar notas, faltas e baixar o material didatico disponibilizado pelos professores. Aproveite e bons estudos!</p>
+              <p class="lead">Aqui você pode lançar notas, faltas e anexar o material didatico, disponibilizando para os pais e alunos.</p>
             </div>
         </div>
 
@@ -63,18 +63,46 @@
             <table class="table">
                 <thead>
                 <tr>
+                    <th scope="col">Aluno</th>
                     <th scope="col">Disciplina</th>
-                    <th scope="col">Notas</th>
-                    <th scope="col">Falta</th>
+                    <th scope="col">Nota Final</th>
+                    <th scope="col">Falta Final</th>
                     <th scope="col">Arquivos</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row">Matematica</th>
-                    <td>9.5</td>
-                    <td>100%</td>
-                    <td><button type="button" class="btn btn-outline-primary" onclick="baixar()">Baixar</button></td>
+                    <th scope="row">Johnan Herp</th>
+                    <th>
+                      <select class="custom-select">
+                        <option selected>Selecione</option>
+                        <option value="1">Matematica</option>
+                        <option value="2">Portugues</option>
+                        <option value="3">Ingles</option>
+                      </select>
+                    </th>
+                    <td>
+                      <form>
+                        <div class="form-group">
+                          <input type="number" max="10" min="0" class="form-control" id="formGroupExampleInput" placeholder="9.5">
+                        </div>
+                      </form>
+                    </td>
+                    <td>
+                      <form>
+                        <div class="form-group">
+                          <input type="number" max="20" min="0" class="form-control" id="formGroupExampleInput" placeholder="4">
+                        </div>
+                      </form>
+                    </td>
+                    <td>
+                      <form>
+                        <div class="form-group">
+                          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                      </form>
+                    </td>
+                    <td><button type="button" class="btn btn-outline-primary" onclick="#">Lançar</button></td>
                 </tr>
                 
                 </tbody>
