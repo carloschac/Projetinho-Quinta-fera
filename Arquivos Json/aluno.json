@@ -1,45 +1,77 @@
 [
     {
-        "nome":"Tommy Fay",
+        "nome":"Ana Gabriela",
         "idade":10,
         "email":"Mallie69@gmail.com",
         "telefone":"(833) 265-9879",
-        "turma":"turma 1",
-        "responsavel":"Bryant Walter",
-        "disciplinas":"disciplinas 1",
-        "notas":47,
-        "faltas":23,
+        "turma":"Sexto ano",
+        "responsavel":"Cleidi Chaves",
         "id":"1",
         
         "ativextra":
         [
             {
-                "name":"name 1",
-                "turno":"turno 1",
-                "id":"1",
-                "alunoId":"1"
+                "name":"Futsal",
+                "nota": 9
+                
+                
+            }
+        ],
+
+        "disciplinas":
+        [
+            {
+                "name":"Geografia",
+                "nota": 8,
+                "faltas": 1
+                
+                
+            },
+
+            {
+                "name":"Portugues",
+                "nota": 4,
+                "faltas": 5
+                
+                
             }
         ]
     },
     {
-        "nome":"Julian Hane",
-        "idade":48,
+        "nome":"Carina Rosa",
+        "idade":9,
         "email":"Benny_Nader@yahoo.com",
         "telefone":"630-321-2460",
-        "turma":"turma 2",
-        "responsavel":"Timothy Klocko",
-        "disciplinas":"disciplinas 2",
-        "notas":64,
-        "faltas":87,
+        "turma": "Quinto ano",
+        "responsavel":"Clarisse Rosa",
         "id":"2",
         
         "ativextra":
         [
             {
-                "name":"name 2",
-                "turno":"turno 2",
-                "id":"2",
-                "alunoId":"2"
+                "name":"Natação",
+                "nota": 8
+                
+                
+            }
+        ],
+
+        "disciplinas":
+        [
+            {
+                "name":"Matematica",
+                "nota": 7,
+                "faltas": 0
+                
+                
+            },
+
+            {
+                "name":"Artes",
+                "nota": 5,
+                "faltas": 1
+                
+                
             }
         ]
     }
