@@ -1,1 +1,16 @@
-[{"nome":"Danielle Yost","email":"Vanessa.Berge@hotmail.com","turmas":[],"telefone":"698.274.3282 x1847","id":"1"},{"nome":"Karl Cruickshank","email":"Johanna_Nolan26@yahoo.com","turmas":[],"telefone":"233-851-4516","id":"2"}]
+[
+    {
+        "nome":"Danielle Yost",
+        "email":"Vanessa.Berge@hotmail.com",
+        "turmas":[],
+        "telefone":"698.274.3282 x1847",
+        "id":"1"
+    },
+    {
+        "nome":"Karl Cruickshank",
+        "email":"Johanna_Nolan26@yahoo.com",
+        "turmas":[],
+        "telefone":"233-851-4516",
+        "id":"2"
+    }
+]
