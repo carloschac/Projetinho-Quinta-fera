@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link text-light" href="../../Portal/AreaAlunoPais.html">Home <span class="sr-only">(página atual)</span></a>
+              <a class="nav-link text-light" href="../../Portal/AreaFuncionario.html">Home <span class="sr-only">(página atual)</span></a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link text-light" href="#">Link</a>
@@ -59,6 +59,7 @@
 
         <!-- <h2>Aqui você pode consultar notas, faltas e baixar o material didatico disponibilizado pelos professores. Aproveite e bons estudos!</h2> -->
 
+        <!-- Arrumar!! Deixar separado (dropbox de alunos) e separar as notas das faltas e dos arquivos para anexar. -->
         <div class="container">
             <table class="table">
                 <thead>
@@ -102,7 +103,7 @@
                         </div>
                       </form>
                     </td>
-                    <td><button type="button" class="btn btn-outline-warning" onclick="">Lançar</button></td>
+                    <td><button type="button" class="btn btn-outline-warning" onclick="lançar()">Lançar</button></td>
                 </tr>
                 
                 </tbody>
@@ -110,7 +111,7 @@
         </div>
         
         <div class="container mb-4">
-            <a class="btn btn-warning btn-sm" href="#" role="button">Imprimir</a>
+            <a class="btn btn-warning btn-sm" href="#" role="button" onclick="imprimir()">Imprimir</a>
             <a class="btn btn-warning btn-sm" href="../../Portal/AreaAlunoPais.html" role="button">Voltar</a>
         </div>
 
@@ -131,6 +132,8 @@
       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
       crossorigin="anonymous"></script>
     <script src="../Bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="./Script.js"></script>
     
 </body>
 </html>
