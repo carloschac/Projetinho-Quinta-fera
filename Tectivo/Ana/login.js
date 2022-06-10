@@ -48,33 +48,17 @@ var inputSenha = document.getElementById('inputSenha');
 var msgDeErro = document.getElementById('msgDeErro');
 var buttonEntrar = document.getElementById('buttonEntrar');
 
-function validarLogin(inputEmail, inputSenha){
+
+function validarLogin(){
     // validar entrada de dados no form
 
-    var validarok = true;
-    var erro = '';
-
-    if(inputEmail.trim().length === 0) {
-        erro = 'o email é obrigatório';
-        inputEmail.classList.add('is-invalid');
-        validarok = false;
-    } else {
-        inputEmail.classList.remove('is-invalid');
-    }
-
-    if(inputSenha.trim().length === 0) {
-        erro = 'o email é obrigatório';
-        inputSenha.classList.add('is-invalid');
-        validarok = false;
-    } else {
-        inputSenha.classList.remove('is-invalid');
-    }
-
-    if (!validarok){
-        msgDeErro.innerHTML = erro;
+    if(inputEmail === 0) {
         msgDeErro.classList.remove('d-none');
-    }else{
+    } else {
         msgDeErro.classList.add('d-none');
     }
-    return validarok;
+
+
 }
+
+buttonEntrar.addEventListener('click', validarLogin);
