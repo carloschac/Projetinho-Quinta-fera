@@ -4,62 +4,82 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Carina Rosa">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<title>Area do Aluno</title>
+	<link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
+	<title>Portal Aluno/Responsavel</title>
 </head>
 <body>
-	<div class="container clearfix">
-	<header>
-		
-		<a href="../Index/index.html"><img src="../img/page-2.png" alt="Colegio Tectivo" class="logo"></a>
-		<h1>Bem Vindo a Area do Aluno</h1>
-		
-	</header>
-	<section>
-		<div class="section">
-		<article>
-			<a href="agendaProvas.html" ><img src="../img/agenda.png" alt="Acessar agenda de provas dos alunos" class="imgaluno">Agenda</a>
-			
-		</article>
+	<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <a class="navbar-brand text-light" href="../../Portal/index2.html">
+          <img src="../../img/logotransp2.png" width="40" height="40" class="d-inline-block align-top mr-3" alt="Logo">Colégio Negativo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="../../Portal/AreaAlunoPais.html">Home <span class="sr-only">(página atual)</span></a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link text-light" href="#">Link</a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Mais opções
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Rematricula</a>
+                <a class="dropdown-item" href="#">Atividades Extras</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Sobre nós</a>
+              </div>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled text-light" href="#">Desativado</a>
+            </li> -->
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-warning text-light my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
+    </nav>
 
-		<article>
-			<a href="gradeAulas.html"><img src="../img/aulas.png" alt="Acessar grade de aulas dos alunos" class="imgaluno">Grade de Aulas</a>
-			
-		</article>
-
-		<article>
-			<a href="NotasFaltas.html"><img src="../img/nota.png" alt="Acessar notas e faltas lançadas pelos professores" class="imgaluno">Notas e Frequencias</a>
-			
-		</article>
-
-		<article>
-			<a href="atividadeExtra.html"><img src="../img/Atvextra.png" alt="Acessar e matricular atividades extras para os alunos" class="imgaluno">Atividades Extras</a>
-			
-		</article>
-			
-		<article>
-			<a href="materialDisciplina.html"><img src="../img/disciplinas.png" alt="Acessar os materiais de estudo das disciplinas" class="imgaluno">Material para Estudo</a>
-			
-		</article>
-
-		<article>
-			<a href="chatProfessores.html"><img src="../img/chat.png" alt="Mandar mensagens para os Professores" class="imgaluno">Chat</a>
-			
-		</article>
-
-		</div>
-
-		<div>
-			<a href="chatsecretaria.html"><img src="../img/avisoaluno.png" alt="Aviso para rematricula" class="aviso"></a>
-			<h2>Avise seus pais/responsaveis que precisam entrar em contato com a secretaria caso não tenham feito a rematricula ainda. Podem entrar em contato atravez <a href="chatsecretaria.html">clicando aqui</a>.</h2>
-		</div>
+	<section class="container">
+		<div class="card" style="width: 18rem;">
+			<img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
+			<div class="card-body">
+			  <h5 class="card-title">Título do card</h5>
+			  <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+			</div>
+			<ul class="list-group list-group-flush">
+			  <li class="list-group-item">Cras justo odio</li>
+			  <li class="list-group-item">Dapibus ac facilisis in</li>
+			  <li class="list-group-item">Vestibulum at eros</li>
+			</ul>
+			<div class="card-body">
+			  <a href="#" class="card-link">Link do card</a>
+			  <a href="#" class="card-link">Outro link</a>
+			</div>
+		  </div>
 	</section>
+
 	<footer>
-		<p>2022. Trabalho para a disciplina de Tópicoos Especiais de Sistemas JS.</p>
-	</footer>
-	</div>
+        <div class="bg-secondary text-light text-center font-weight-light m-0 p-3 fixed-bottom">
+          <p>Todos os direitos reservados a Colégio Tecnologico Negativo <br>
+            CNPJ: xx.xxx.xxx/xxxx-xx <br>
+            2022</p>
+        </div>    
+    </footer>
 
-
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="../Bootstrap/js/bootstrap.min.js"></script>
+	
 </body>
 
 <script src="script.js" defer></script>>
