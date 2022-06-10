@@ -10,6 +10,11 @@ var agenda = [
                 "evento":"Futsal",
                 "data": " -  31/07/2022"
                 
+            },
+            {
+                "evento":"Entrega de Trabalho",
+                "data": " -  01/07/2022"
+                
             }
          
 ]
