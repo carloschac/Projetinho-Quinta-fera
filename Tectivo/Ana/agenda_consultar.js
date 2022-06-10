@@ -21,15 +21,15 @@ var tabela = document.querySelector('td');
 for (var i = 0; i < agenda.length; i++){
      var myTd = document.createElement('td')
      var myP = document.createElement('p')
-    //  var MyTd2 = document.createElement ('td')
+
 
      myTd.textContent = agenda[i].evento +' '+ agenda[i].data
-    //  myTd2.textContent = agenda[i].data
+   
     tabela.appendChild(myTd)
     tabela.appendChild(myP)
      
 }
   
-    //  tabela.appendChild(myTd2)
+    
      console.log(myTd)
 
