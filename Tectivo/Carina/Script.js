@@ -2,13 +2,21 @@ function lançar() {
     alert("Notas e Faltas lançadas com sucesso!")
 }
 
+// Botão baixar
+
+function dowload(){
+    document.getElementById('btn_imagem2').click();    
+}
+
+// Botão imprimir
+
 function imprimir() {
     window.print();
 }
 
 // Função para puxar Json
 
-var disciplina = [ 
+var disc = [ 
         
     {
         "Disciplina":"Matemática",
@@ -34,4 +42,17 @@ var disciplina = [
  
 ]
 
-console.log(disciplina);
+console.log(disc);
+var tabela = document.querySelector('td');
+ 
+for (var i = 0; i < disc.length; i++){
+    var myTd = document.createElement('td')
+    var myP = document.createElement('p')
+
+    myTd.textContent = disc[i].Disciplina +' '+ disc[i].Nota
+    myTd.textContent = disc[i].Disciplina +' '+ disc[i].Faltas
+   
+    tabela.appendChild(myTd)
+    tabela.appendChild(myP)     
+}    
+    console.log(myTd)
