@@ -1,64 +1,66 @@
-// validação simples do login
-// function logar(){
-//     var login = document.getElementById('login').value;
-//     var senha = document.getElementById('senha').value;
+let email = document.getElementById("email");
+let password = document.getElementById("password");
+let form = document.querySelector("form");
+let textForm = document.getElementById("textForm");
+let textEmail = document.getElementById("textEmail");
+let textPassword = document.getElementById("textPassword");
 
-//     if (login == "aluno" && senha == "aluno") {
-//         alert('Logado com sucesso! Clique em OK para ser redirecionado para a Area do Aluno')
-//         location.href = "AreaAluno.html";
-//     }else{
-//         alert('Erro! Verifique se os campos estão em branco OU se seu login e senha estão corretos.')
-//     }
-// }
+form.addEventListener("submit", (e) => {
+  if(email.value == "ana@gmail.com" && password.value == "ana123" || email.value == "carina@gmail.com" && password.value =="carina"){
+     location.href = "teste.html"; 
+    //  redirecionar para o portal do aluno
+  }
+  else if (email.value == "carlos@gmail.com" && password.value == "carlos" || email.value == "duda@gmail.com" && password.value == "eduarda" ){
+    location.href = "agenda_lancar.html";
+    // redirecionar para o portal do professor
+  }
+  else{
+    textForm.textContent = "Email ou Senha não estão registrados!";
+  }
 
-var login1 = [
-    
-        
-    {
-        "email":"ana@gmail.com",
-        "senha": "aninha123"
-        
-    },
-    {
-        "email":"carina@gmail.com",
-        "senha": "motoca123"
-        
-    }
- 
-]
-
-var login2 = [
-    
-        
-    {
-        "email":"carlos@gmail.com",
-        "senha": "euamolol"
-        
-    },
-    {
-        "email":"eduarda@gmail.com",
-        "senha": "loirinha"
-        
-    }
- 
-]
-
-var inputEmail = document.getElementById('inputEmail');
-var inputSenha = document.getElementById('inputSenha');
-var msgDeErro = document.getElementById('msgDeErro');
-var buttonEntrar = document.getElementById('buttonEntrar');
-
-
-function validarLogin(){
-    // validar entrada de dados no form
-
-    if(inputEmail === 0) {
-        msgDeErro.classList.remove('d-none');
+  if (email.value == "" && password.value == "") {
+      textForm.textContent = "Você precisa preencher todos os campos!";
+  } else if (
+      validatorEmail(email.value) === true &&
+      validatorPassword(password.value) === true
+   ) {
+      console.log(email.value);
+      console.log(password.value);
+      textForm.textContent = "";
+      textEmail.textContent = "";
+      textPassword.textContent = "";
     } else {
-        msgDeErro.classList.add('d-none');
+      console.log("Requisição não atendida");
     }
+  
+  e.preventDefault();
+});
 
+email.addEventListener("keyup", () => {
+  if (validatorEmail(email.value) !== true) {
+    textEmail.textContent = "O formato do email deve ser Ex: name@abc.com";
+  } else {
+    textEmail.textContent = "";
+  }
+});
 
+password.addEventListener("keyup", () => {
+  if (validatorPassword(password.value) !== true) {
+    textPassword.textContent =
+      "O formato da senha deve ser no min 6 caracteres";
+  } else {
+    textPassword.textContent = "";
+  }
+});
+
+function validatorEmail(email) {
+  let emailPattern =
+    /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+  return emailPattern.test(email);
 }
 
-buttonEntrar.addEventListener('click', validarLogin);
+function validatorPassword(password) {
+  let passwordPattern =
+    /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+  return passwordPattern.test(password);
+}
