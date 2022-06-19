@@ -17,11 +17,11 @@ function imprimir() {
 //ocultar notas e faltas
 
 function func2() {
-    if (document.getElementById('matematica').style.display == 'block'){
-        document.getElementById('matematica').style.display = 'none';
+    if (document.getElementById('matematica').style.display == 'none'){
+        document.getElementById('matematica').style.display = 'block';
     }
     else{
-        document.getElementById('matematica').style.display = 'block';
+        document.getElementById('matematica').style.display = 'none';
     }
     
 }
@@ -36,6 +36,17 @@ function func3() {
         
     }
 }
+
+// var btn = document.getElementById('matematica');
+// var container = document.querySelector('.table');
+// btn.addEventListener('click', function() {
+    
+//   if(container.style.display === 'block') {
+//       container.style.display = 'none';
+//   } else {
+//       container.style.display = 'block';
+//   }
+// });
 
 // Função para puxar Json
 
