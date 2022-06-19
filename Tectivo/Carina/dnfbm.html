@@ -21,24 +21,17 @@
             <li class="nav-item active">
               <a class="nav-link text-light" href="../../Portal/AreaAluno.html">Home <span class="sr-only">(página atual)</span></a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link text-light" href="#">Link</a>
-            </li> -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Mais opções
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Notas</a>
-                <a class="dropdown-item" href="#">Atividades Extras</a>
-                <!-- <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item" href="#">Atividades Extras</a>                
                 <a class="dropdown-item" href="#">Agenda</a>
                 <a class="dropdown-item" href="#">Chat</a>
               </div>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link disabled text-light" href="#">Desativado</a>
-            </li> -->
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
@@ -63,7 +56,7 @@
           <div class="btn-group">
             <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Disciplina</button>
             <div class="dropdown-menu btn-light">
-              <a class="dropdown-item" href="matematica">Matematica</a>
+              <a class="dropdown-item" href="#" onclick="func2()">Matematica</a>
               <a class="dropdown-item" href="#">Portugues</a>
               <a class="dropdown-item" href="#">Geografia</a>
               <a class="dropdown-item" href="#">Artes</a>
@@ -71,12 +64,12 @@
           </div>
         </article>
 
-        <article>
+        <article class="hidden" id="matematica">
           <div>
             <table class="table">
                 <thead>
                   <tr>
-                    <th colspan="3" class="text-center" id="matematica">Matematica</th>
+                    <th colspan="3" class="text-center">Matematica</th>
                   </tr>            
                   <tr>
                     <th scope="col" width="400">Atividade</th> 

@@ -14,6 +14,29 @@ function imprimir() {
     window.print();
 }
 
+//ocultar notas e faltas
+
+function func2() {
+    if (document.getElementById('matematica').style.display == 'block'){
+        document.getElementById('matematica').style.display = 'none';
+    }
+    else{
+        document.getElementById('matematica').style.display = 'block';
+    }
+    
+}
+
+function func3() {
+    if (document.getElementById('infosFaltas').style.display == 'block') {
+        document.getElementById('infosFaltas').style.display = 'none';
+        
+    }
+    else{
+        document.getElementById('infosFaltas').style.display = 'block';
+        
+    }
+}
+
 // Função para puxar Json
 
 // var disc = [ 
