@@ -139,34 +139,36 @@
             </table> -->
           </div>
         </article>
-        <article class="mb-4">
-            <div class="btn-group">
-              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faltas</button>
-              <div class="dropdown-menu btn-light">
-                <a class="dropdown-item" href="#">1º Bimestre</a>
-                <a class="dropdown-item" href="#">2º Bimestre</a>
-                <a class="dropdown-item" href="#">3º Bimestre</a>
-                <a class="dropdown-item" href="#">4º Bimestre</a>
+        <div>
+          <article class="mb-4">
+              <div class="btn-group">
+                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faltas</button>
+                <div class="dropdown-menu btn-light">
+                  <a class="dropdown-item" href="#" onclick="func3()" id="primeiro">1º Bimestre</a>
+                  <a class="dropdown-item" href="#">2º Bimestre</a>
+                  <a class="dropdown-item" href="#">3º Bimestre</a>
+                  <a class="dropdown-item" href="#">4º Bimestre</a>
+                </div>
               </div>
-            </div>
-        </article>
+          </article>
 
-        <article>
-          <div>
-            <table class="table">
-              <thead>                
-                <tr>
-                  <th scope="col" width="400" class="text-center">Bimestre</th>
-                  <th scope="col" class="text-center">Faltas</th>
-                </tr>
-                <tr>
-                  <td scope="row" class="text-center">1º Bimestre</td>
-                  <td class="text-center">3</td>
-                </tr>
-              </thead>
-            </table>
-          </div>
-        </article>
+          <article href="#primeiro">
+            <div id="infosFaltas" class="d-none">
+              <table class="table">
+                <thead>                
+                  <tr>
+                    <th scope="col" width="400" class="text-center">Bimestre</th>
+                    <th scope="col" class="text-center">Faltas</th>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="text-center">1º Bimestre</td>
+                    <td class="text-center">3</td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </article>
+        </div>
 
         <!-- <div>
             <table class="table">

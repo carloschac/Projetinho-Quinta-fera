@@ -27,12 +27,12 @@ function func2() {
 }
 
 function func3() {
-    if (document.getElementById('infosFaltas').style.display == 'block') {
-        document.getElementById('infosFaltas').style.display = 'none';
+    if (document.getElementById('infosFaltas').style.display == 'none') {
+        document.getElementById('infosFaltas').style.display = 'block';
         
     }
     else{
-        document.getElementById('infosFaltas').style.display = 'block';
+        document.getElementById('infosFaltas').style.display = 'none';
         
     }
 }
