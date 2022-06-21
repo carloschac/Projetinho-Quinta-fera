@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
         <a class="navbar-brand text-light" href="index2.html">
-            <img src="../img/logotransp2.png" width="40" height="40" class="d-inline-block align-top mr-3"
+            <img src="../../img/logotransp2.png" width="40" height="40" class="d-inline-block align-top mr-3"
                 alt="Logo">Colégio Negativo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
             aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
@@ -52,10 +52,100 @@
             </form>
         </div>
     </nav>
-    <nav>
-        Matricule no Tectivo
-    </nav>
-    <form>
+
+    <header>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Matricula ano letivo - 2022</h1>
+                <p class="lead">Faça a matricula do seu filho para o proximo semestre.</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <article>
+            <form>
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <label for="inputnome" class="col-sm-5 col-form-label">Nome completo: </label>
+                        <input type="text" class="form-control" placeholder="Nome do seu filho">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <label for="inputnome" class="col-sm-2 col-form-label">CPF: </label>
+                        <input type="text" name="cpf" placeholder="digite seu CPF" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                            \title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+                        <input type="submit" value="Verificar" onclick="ver()">
+                        <script>
+                            function ver() {
+                                alert("CPF verificado!");
+                            }
+                        </script>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-5">
+                        <label for="inputnome" class="col-sm-2 col-form-label">Email: </label>
+                        <input type="email" class="form-control" placeholder="email">
+                    </div>
+                    <div class="col-5">
+                        <label for="inputnome" class="col-sm-2 col-form-label">Telefone: </label>
+                        <input type="phone" class="form-control" placeholder="Celular">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <label for="inputnome" class="col-sm-6 col-form-label">Nome da Mãe: </label>
+                        <input type="text" class="form-control" placeholder="nome da mãe">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <label for="inputnome" class="col-sm-6 col-form-label">Nome do Pai: </label>
+                        <input type="text" class="form-control" placeholder="nome do pai">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <label for="inputnome" class="col-sm-6 col-form-label">Digite seu login: </label>
+                        <input type="text" class="form-control" placeholder="Login">
+                    </div>
+                </div>
+                <div class="form-group col-md-4 mb-4">
+                    <label for="inputAno">Selecione a turma:</label>
+                    <select id="inputAno" class="form-control">
+                        <option selected>Escolher</option>
+                        <option value="ano">1° Ano</option>
+                        <option value="ano">2° Ano</option>
+                        <option value="ano">3° Ano</option>
+                        <option value="ano">4° Ano</option>
+                        <option value="ano">5° Ano</option>
+                        <option value="ano">6° Ano</option>
+                        <option value="ano">7° Ano</option>
+                        <option value="ano">8° Ano</option>
+                        <option value="ano">9° Ano</option>
+                    </select>
+                </div>
+            </form>
+        </article>
+
+        <form>
+            <input class="btn btn-warning btn-sm mb-4 mt-4" type="button" value="Matricular" onclick="msg()">
+        </form>
+
+        <div class="mb-4 mt-4">
+            <a class="btn btn-warning btn-sm" href="#" role="button" onclick="imprimir()">Imprimir</a>
+            <a class="btn btn-warning btn-sm" href="../../Portal/Aluno/AreaAluno.html" role="button">Voltar</a>
+        </div>
+    </section>
+
+
+    <!-- <form>
         Digite seu nomecompleto: <input type="text" name="nome" placeholder="digite seu nome"> <br>
         Digite seu CPF:<form name="cadastro">
             <input type="text" name="cpf" placeholder="digite seu CPF" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
@@ -91,7 +181,25 @@
 
     <form>
         <input type="button" value="Matricular" onclick="msg()">
-    </form>
+    </form> -->
+
+    <footer>
+        <div class="bg-secondary text-light text-center font-weight-light mb-0 p-3">
+            <p>Todos os direitos reservados a Colégio Tecnologico Negativo <br>
+                CNPJ: xx.xxx.xxx/xxxx-xx <br>
+                2022</p>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="../../Bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../Portal/JavaScript/Script.js"></script>
 
     <script>
         function msg() {
