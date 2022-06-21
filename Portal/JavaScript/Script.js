@@ -16,15 +16,25 @@ function imprimir() {
 
 //ocultar notas e faltas
 
-function func2() {
-    if (document.getElementById('matematica').style.display == 'block'){
-        document.getElementById('matematica').style.display = 'none';
-    }
-    else{
-        document.getElementById('matematica').style.display = 'block';
-    }
-    
+var dropdown = document.getElementById("droplist");
+optionPrev = "null" 
+
+function combo(value) {    
+
+  if ( dropdown.options[dropdown.selectedIndex].value != -1 ) { 
+    var option = dropdown.options[dropdown.selectedIndex].value;
+    if( optionPrev != "null") { 
+      var optionHide = document.getElementById(optionPrev); 
+      optionHide.classList.toggle("show"); 
+    } 
+    var optionShow = document.getElementById(option); 
+    optionShow.classList.toggle("raiseSunshine"); 
+    optionPrev = option; 
+  }
 }
+dropdown.onchange = combo;
+    
+
 
 function func3() {
     if (document.getElementById('infosFaltas').style.display == 'none') {

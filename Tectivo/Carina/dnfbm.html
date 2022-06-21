@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
     <title>Grade Curricular</title>
 </head>
 <body>
@@ -52,22 +53,37 @@
     
     <section class="container">
 
-        <article class="mb-4">
+        <article class="mb-4 row">
+          
           <div class="btn-group">
-            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Disciplina</button>
-            <div class="dropdown-menu btn-light">
-              <!-- <button class="dropdown-item" id="matematica" onclick="func2()">Matematica</button> -->
-              <a class="dropdown-item" href="#" onclick="func2()">Matematica</a>
-              <a class="dropdown-item" href="#" id="portugues">Portugues</a>
-              <a class="dropdown-item" href="#">Geografia</a>
-              <a class="dropdown-item" href="#">Artes</a>
-            </div>
+
+            <span>Selecione uma disciplina:</span>
+
+            <select id="droplist">
+
+              <option value="-1">Selecionar</option>
+              <option value="matematica">Matematica</option>
+              <option value="portugues">Portugues</option>
+              <option value="geografia">Geografia</option>
+              <option value="artes">Artes</option>
+
+            </select>
           </div>
+          <!-- <div class="btn-group">
+            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onchange="func2(this.value)">Disciplina</button>
+            <div class="dropdown-menu btn-light">
+              <button class="dropdown-item" id="matematica" onclick="func2()">Matematica</button>
+              <a class="dropdown-item" href="#" value="matematica">Matematica</a>
+              <a class="dropdown-item" href="#" value="matematica">Portugues</a>
+              <a class="dropdown-item" href="#" value="matematica">Geografia</a>
+              <a class="dropdown-item" href="#" value="matematica">Artes</a>
+            </div>
+          </div> -->
         </article>
 
-        <article class="hidden">
-          <div>
-            <table class="table" id="matematica">
+        <article>
+          <div id="matematica" class="hidden">
+            <table class="table">
                 <thead>
                   <tr>
                     <th colspan="3" class="text-center">Matematica</th>
@@ -101,11 +117,15 @@
                     </td>
                   </tr>
                 </tbody>
-            </table>
-            <!-- <table class="table">
+            </table>            
+          </div>
+        </article>
+        <article>
+          <div id="portugues" class="hidden">
+            <table class="table">
               <thead>
                 <tr>
-                  <th colspan="3" class="text-center" id="portugues">Portugues</th>
+                  <th colspan="3" class="text-center">Portugues</th>
                 </tr>            
                 <tr>
                   <th scope="col" width="400">Atividade</th> 
@@ -136,9 +156,90 @@
                   </td>
                 </tr>
               </tbody>
-            </table> -->
+            </table>
           </div>
         </article>
+        <article>
+          <div id="geografia" class="hidden">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th colspan="3" class="text-center">Geografia</th>
+                </tr>            
+                <tr>
+                  <th scope="col" width="400">Atividade</th> 
+                  <th scope="col" class="text-center">Nota</th>
+                  <th scope="col" class="text-center">Arquivo</th>                                     
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">Trabalho 1º Bimestre</td>
+                  <td class="text-center">9.5</td>
+                  <td class="text-center">   
+                    <a class="btn btn-outline-warning" href="../../img/avisoaluno.png" download="cant3.png" onclick="dowload()" target="_blank">Baixar</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Trabalho 2º Bimestre</td>
+                  <td class="text-center">7.2</td>
+                  <td class="text-center">   
+                    <a class="btn btn-outline-warning" href="../../img/avisoaluno.png" download="cant3.png" onclick="dowload()" target="_blank">Baixar</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Prova Final</td>
+                  <td class="text-center">8.0</td>
+                  <td class="text-center">   
+                    <a class="btn btn-outline-warning" href="../../img/avisoaluno.png" download="cant3.png" onclick="dowload()" target="_blank">Baixar</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+        <article>
+          <div id="artes" class="hidden">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th colspan="3" class="text-center">Artes</th>
+                </tr>            
+                <tr>
+                  <th scope="col" width="400">Atividade</th> 
+                  <th scope="col" class="text-center">Nota</th>
+                  <th scope="col" class="text-center">Arquivo</th>                                     
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">Trabalho 1º Bimestre</td>
+                  <td class="text-center">9.5</td>
+                  <td class="text-center">   
+                    <a class="btn btn-outline-warning" href="../../img/avisoaluno.png" download="cant3.png" onclick="dowload()" target="_blank">Baixar</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Trabalho 2º Bimestre</td>
+                  <td class="text-center">7.2</td>
+                  <td class="text-center">   
+                    <a class="btn btn-outline-warning" href="../../img/avisoaluno.png" download="cant3.png" onclick="dowload()" target="_blank">Baixar</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">Prova Final</td>
+                  <td class="text-center">8.0</td>
+                  <td class="text-center">   
+                    <a class="btn btn-outline-warning" href="../../img/avisoaluno.png" download="cant3.png" onclick="dowload()" target="_blank">Baixar</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+
+        <!-- Para faltas -->
         <div>
           <article class="mb-4">
               <div class="btn-group">
