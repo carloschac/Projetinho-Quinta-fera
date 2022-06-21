@@ -14,14 +14,14 @@ function imprimir() {
     window.print();
 }
 
-//ocultar notas e faltas
+//ocultar notas
 
 var dropdown = document.getElementById("droplist");
 optionPrev = "null" 
 
 function combo(value) {    
 
-  if ( dropdown.options[dropdown.selectedIndex].value != -1 ) { 
+  if (dropdown.options[dropdown.selectedIndex].value != -1) { 
     var option = dropdown.options[dropdown.selectedIndex].value;
     if( optionPrev != "null") { 
       var optionHide = document.getElementById(optionPrev); 
@@ -31,21 +31,25 @@ function combo(value) {
     optionShow.classList.toggle("raiseSunshine"); 
     optionPrev = option; 
   }
+
+  
 }
 dropdown.onchange = combo;
     
+//ocultar faltas
 
 
-function func3() {
-    if (document.getElementById('infosFaltas').style.display == 'none') {
-        document.getElementById('infosFaltas').style.display = 'block';
+
+// function func3() {
+//     if (document.getElementById('infosFaltas').style.display == 'none') {
+//         document.getElementById('infosFaltas').style.display = 'block';
         
-    }
-    else{
-        document.getElementById('infosFaltas').style.display = 'none';
+//     }
+//     else{
+//         document.getElementById('infosFaltas').style.display = 'none';
         
-    }
-}
+//     }
+// }
 
 // var btn = document.getElementById('matematica');
 // var container = document.querySelector('.table');
