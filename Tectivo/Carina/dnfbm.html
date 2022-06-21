@@ -61,26 +61,16 @@
   <section class="container">
 
     <article class="mb-4">
-      <div class="btn-group">
-        <span>Selecione uma disciplina:</span>
-
-        <select class="form-control form-control-sm" id="droplist">
-          <option value="">Selecione</option>
+      <div class="form-group col-md-4 mb-4">
+        <label for="droplist">Selecione Disciplina:</label>
+        <select id="droplist" class="form-control">
+          <option selected>Escolher</option>
           <option value="matematica">Matematica</option>
           <option value="portugues">Portugues</option>
           <option value="geografia">Geografia</option>
-          <option value="artes">Artes</option>
+          <option value="artes">Artes</option>          
         </select>
-        <!-- <select id="droplist" class="btn btn-warning">
-
-          <option value="">Selecione</option>
-          <option value="matematica">Matematica</option>
-          <option value="portugues">Portugues</option>
-          <option value="geografia">Geografia</option>
-          <option value="artes">Artes</option>
-
-        </select> -->
-      </div>      
+      </div>     
     </article>
 
     <article>
@@ -256,26 +246,15 @@
     <!-- Para faltas -->
     <div>
       <article class="mb-4">
-        <div class="btn-group">
-          <!-- <span>Selecione um bimestre:</span> -->
-          <label for="inputBimestre">Bimestre</label>
-
-          <select class="form-control form-control-sm" id="droplist">
-            <option value="">Selecione</option>
-            <option class="dropdown-item" value="primeiro">1º Bimestre</option>
-            <option class="dropdown-item" value="segundo">2º Bimestre</option>
-            <option class="dropdown-item" value="terceiro">3º Bimestre</option>
-            <option class="dropdown-item" value="quarto">4º Bimestre</option>
+        <div class="form-group col-md-4 mb-4">
+          <label for="droplist">Selecione Bimestre:</label>
+          <select id="droplist" class="form-control">
+            <option selected>Escolher</option>
+            <option value="primeiro">1º Bimestre</option>
+            <option value="segundo">2º Bimestre</option>
+            <option value="terceiro">3º Bimestre</option>
+            <option value="quarto">4º Bimestre</option>         
           </select>
-          
-          <!-- <select id="droplist" type="button" class="btn btn-warning dropdown-toggle">Faltas
-            <div class="dropdown-menu btn-light">
-              <option value="">Selecione</option>
-              <option class="dropdown-item" value="primeiro">1º Bimestre</option>
-              <option class="dropdown-item" value="segundo">2º Bimestre</option>
-              <option class="dropdown-item" value="terceiro">3º Bimestre</option>
-              <option class="dropdown-item" value="quarto">4º Bimestre</option>              
-          </select> -->
         </div>
       </article>
 
