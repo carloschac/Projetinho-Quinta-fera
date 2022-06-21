@@ -8,12 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="style.css" />
-  <title>Email</title>
+  <title>Chat</title>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-    <a class="navbar-brand text-light" href="../../Portal/index2.html">
+    <a class="navbar-brand text-light" href="../index2.html">
       <img src="../../img/logotransp2.png" width="40" height="40" class="d-inline-block align-top mr-3"
         alt="Logo">Colégio Negativo</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
@@ -24,7 +24,7 @@
     <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link text-light" href="../../Portal/AreaAluno.html">Home <span class="sr-only">(página
+          <a class="nav-link text-light" href="AreaAluno.html">Home <span class="sr-only">(página
               atual)</span></a>
         </li>
         <li class="nav-item dropdown">
@@ -33,10 +33,11 @@
             Mais opções
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Notas</a>
-            <a class="dropdown-item" href="#">Atividades Extras</a>
-            <a class="dropdown-item" href="#">Agenda</a>
-            <a class="dropdown-item" href="#">Chat</a>
+            <a class="dropdown-item" href="../../Tectivo/Carina/dnfbm.html">Notas</a>
+                <a class="dropdown-item" href="atv_extra_matricular.html">Atividades Extras</a>
+                <!-- <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item" href="agenda_consultar.html">Agenda</a>
+                <a class="dropdown-item" href="chat.html">Chat</a>
           </div>
         </li>
       </ul>
@@ -50,8 +51,8 @@
   <header>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Email</h1>
-        <p class="lead">Aqui você pode digitar um email e encaminhar para os professores e secretaria.</p>
+        <h1 class="display-4">Chat</h1>
+        <p class="lead">Aqui você pode digitar um recado e encaminhar para os professores e secretaria.</p>
       </div>
     </div>
   </header>
@@ -59,7 +60,7 @@
   <section class="container">
 
     <article>
-      <form action="mailto:annagabichaves@gmail.com" method="post" enctype="text/plain">
+      <form>
         <div class="row ml-2">
           <div class="col-6 mb-4">
             <label for="inputnome" class="col-sm-5 col-form-label">Seu Nome:</label>
@@ -96,23 +97,10 @@
           </div>
         </div>
 
-        <div class="row ml-2">
-          <div class="col-6 mb-4">
-            <label for="inputnome" class="col-sm-5 col-form-label">Assunto do email:</label>
-            <input type="text" class="form-control" placeholder="Assunto">
-          </div>
-        </div>
-
         <div class="form-group col-8 mb-4">
-          <label for="exampleFormControlTextarea1">Digite seu email:</label>
+          <label for="exampleFormControlTextarea1">Digite seu recado:</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
           <small id="emailHelp" class="form-text text-muted">Lembre-se, seja educado, formal e breve.</small>
-          <form>
-            <div class="form-group mt-4">
-              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-            </div>
-          </form>
-
           <input type="reset" value="Limpar" class="btn btn-warning btn-sm mb-4 mt-4">
           <input type="button" value="Enviar" onclick="chat()" class="btn btn-warning btn-sm mb-4 mt-4">
 
@@ -131,6 +119,12 @@
 
   </footer>
 
+  <script>
+    function chat() {
+      window.open("https://web.whatsapp.com/", '_blank');
+    }
+  </script>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -138,8 +132,8 @@
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="../../Bootstrap/js/bootstrap.min.js"></script>
-  <script src="../../Portal/JavaScript/Script.js"></script>
-  <script src="/Bootstrap/js/bootstrap.js"></script>
+  <script src="../JavaScript/Script.js"></script>
+  
 </body>
 
 </html>
