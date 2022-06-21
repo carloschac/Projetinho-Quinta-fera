@@ -17,11 +17,11 @@ function imprimir() {
 //ocultar notas e faltas
 
 function func2() {
-    if (document.getElementById('matematica').style.display == 'none'){
-        document.getElementById('matematica').style.display = 'block';
+    if (document.getElementById('matematica').style.display == 'block'){
+        document.getElementById('matematica').style.display = 'none';
     }
     else{
-        document.getElementById('matematica').style.display = 'none';
+        document.getElementById('matematica').style.display = 'block';
     }
     
 }
