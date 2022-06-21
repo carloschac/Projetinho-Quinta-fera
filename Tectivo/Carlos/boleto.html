@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Consulta de valores pendentes</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="/img/logotransp2.png"
+            width="40"
+            height="40"
+            class="d-inline-block align-top mr-3"
+            alt="Logo"
+          />Colégio Negativo</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1 class="d-flex justify-content-center">
+          Consulta de valores pendentes
+        </h1>
+        <form class="needs-validation mt-4" novalidate>
+          <div class="form-group-row">
+            <div class="col-md-7 mb-3">
+              <label for="validationCustom01">Nome completo</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                value=""
+                required
+              />
+            </div>
+            <div class="col-md-5 mb-3">
+              <label for="validationCustom02">CPF</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom02"
+                value=""
+                required
+              />
+            </div>
+            <button class="btn buttonColor ml-3" type="submit">
+              Consultar
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="/Bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>
