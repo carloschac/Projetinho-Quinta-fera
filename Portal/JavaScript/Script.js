@@ -1,5 +1,5 @@
 function lançar() {
-    alert("Notas e Faltas lançadas com sucesso!")
+    alert("Lançado com sucesso!")
 }
 
 // Botão baixar
