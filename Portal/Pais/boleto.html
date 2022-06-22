@@ -1,6 +1,5 @@
-<!-- Página para desenvolver um chat em tempo real com a opção de enviar email(conexão em todas as áreas).  -->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -8,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="style.css" />
-  <title>Email</title>
+  <title>Consulta de valores pendentes</title>
 </head>
 
 <body>
@@ -51,76 +50,44 @@
   <header>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Email</h1>
-        <p class="lead">Aqui você pode digitar um email e encaminhar para os professores e secretaria.</p>
+        <h1 class="display-4">Consulta de valores Pendentes</h1>
+        <p class="lead">Aqui você pode consultar boletos pendentes.</p>
       </div>
     </div>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="/img/logotransp2.png" width="40" height="40"
+          class="d-inline-block align-top mr-3" alt="Logo" />Colégio Negativo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav> -->
   </header>
 
   <section class="container">
-
-    <article>
-      <form action="mailto:annagabichaves@gmail.com" method="post" enctype="text/plain">
-        <div class="row ml-2">
-          <div class="col-6 mb-4">
-            <label for="inputnome" class="col-sm-5 col-form-label">Seu Nome:</label>
-            <input type="text" class="form-control" placeholder="Nome">
-          </div>
+    <!-- <h1 class="d-flex justify-content-center">
+      Consulta de valores pendentes
+    </h1> -->
+    <form class="needs-validation mt-4" novalidate>
+      <div class="form-group-row">
+        <div class="col-md-7 mb-3">
+          <label for="validationCustom01">Nome completo</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" required />
         </div>
-
-        <div class="row ml-2">
-          <div class="form-group col-md-4 mb-4">
-            <label for="inputAno">Selecione Professor(a):</label>
-            <select id="inputAno" class="form-control">
-              <option selected>Escolher</option>
-              <option value="prof1">Ines Maria</option>
-              <option value="prof2">Rodrigo Agular</option>
-              <option value="prof3">Adriana Grande</option>
-
-            </select>
-          </div>
-
-          <div class="form-group col-md-4 mb-4 ml-2">
-            <label for="inputAno">Selecione a turma:</label>
-            <select id="inputAno" class="form-control">
-              <option selected>Escolher</option>
-              <option value="ano1">1° Ano</option>
-              <option value="ano2">2° Ano</option>
-              <option value="ano3">3° Ano</option>
-              <option value="ano4">4° Ano</option>
-              <option value="ano5">5° Ano</option>
-              <option value="ano6">6° Ano</option>
-              <option value="ano7">7° Ano</option>
-              <option value="ano8">8° Ano</option>
-              <option value="ano9">9° Ano</option>
-            </select>
-          </div>
+        <div class="col-md-5 mb-3">
+          <label for="validationCustom02">CPF</label>
+          <input type="text" class="form-control" id="validationCustom02" value="" required />
         </div>
+        <button class="btn buttonColor ml-3 mb-4 mt-3" type="submit">
+          Consultar
+        </button>
+      </div>
+    </form>
 
-        <div class="row ml-2">
-          <div class="col-6 mb-4">
-            <label for="inputnome" class="col-sm-5 col-form-label">Assunto do email:</label>
-            <input type="text" class="form-control" placeholder="Assunto">
-          </div>
-        </div>
-
-        <div class="form-group col-8 mb-4">
-          <label for="exampleFormControlTextarea1">Digite seu email:</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-          <small id="emailHelp" class="form-text text-muted">Lembre-se, seja educado, formal e breve.</small>
-          <form>
-            <div class="form-group mt-4">
-              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-            </div>
-          </form>
-
-          <input type="reset" value="Limpar" class="btn btn-warning btn-sm mb-4 mt-4">
-          <input type="submit" value="Enviar" class="btn btn-warning btn-sm mb-4 mt-4">
-
-          <a class="btn btn-warning btn-sm" href="AreaPais.html" role="button">Voltar</a>
-        </div>
-      </form>
-    </article>
+    <div class="mb-4">
+      <a class="btn btn-warning btn-sm" href="#" role="button" onclick="imprimir()">Imprimir</a>
+      <a class="btn btn-warning btn-sm" href="AreaPais.html" role="button">Voltar</a>
+    </div>
   </section>
 
   <footer>
@@ -139,7 +106,8 @@
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="../../Bootstrap/js/bootstrap.min.js"></script>
-  <script src="../JavaScript/Script.js"></script>
+  <script src="../../Portal/JavaScript/Script.js"></script>
+  <script src="/Bootstrap/js/bootstrap.js"></script>
 </body>
 
 </html>
