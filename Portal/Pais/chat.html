@@ -13,7 +13,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-    <a class="navbar-brand text-light" href="../index2.html">
+    <a class="navbar-brand text-light" href="../../Portal/index2.html">
       <img src="../../img/logotransp2.png" width="40" height="40" class="d-inline-block align-top mr-3"
         alt="Logo">Colégio Negativo</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
@@ -24,7 +24,7 @@
     <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link text-light" href="AreaPais.html">Home <span class="sr-only">(página
+          <a class="nav-link text-light" href="../../Portal/AreaAluno.html">Home <span class="sr-only">(página
               atual)</span></a>
         </li>
         <li class="nav-item dropdown">
@@ -33,11 +33,10 @@
             Mais opções
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="matricula_ano_letivo.html">Rematricula</a>
-            <a class="dropdown-item" href="atv_extra_matricular.html">Atividades Extras</a>
-            <!-- <div class="dropdown-divider"></div> -->
-            <a class="dropdown-item" href="agenda_consultar.html">Agenda</a>
-            <a class="dropdown-item" href="chat.html">Chat</a>
+            <a class="dropdown-item" href="#">Notas</a>
+            <a class="dropdown-item" href="#">Atividades Extras</a>
+            <a class="dropdown-item" href="#">Agenda</a>
+            <a class="dropdown-item" href="#">Chat</a>
           </div>
         </li>
       </ul>
@@ -59,7 +58,7 @@
 
   <section class="container">
 
-    <article>
+    <div>
       <form>
         <div class="row ml-2">
           <div class="col-6 mb-4">
@@ -104,10 +103,18 @@
           <input type="reset" value="Limpar" class="btn btn-warning btn-sm mb-4 mt-4">
           <input type="button" value="Enviar" onclick="chat()" class="btn btn-warning btn-sm mb-4 mt-4">
 
-          <a class="btn btn-warning btn-sm" href="AreaPais.html" role="button">Voltar</a>
+          <a class="btn btn-warning btn-sm" href="AreaAluno.html" role="button">Voltar</a>
         </div>
       </form>
-    </article>
+      <article>
+
+        <h6>Perguntas frequentes:</h6>
+         <button onclick="duvida1()">Atividades Extras</button>
+         <button onclick="duvida2()">Nota Errada</button>
+         <button onclick="duvida3()">Boletos</button>
+        </article>
+
+    </div>
   </section>
 
   <footer>
@@ -123,6 +130,7 @@
     function chat() {
       window.open("https://web.whatsapp.com/", '_blank');
     }
+    
   </script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -132,8 +140,9 @@
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="../../Bootstrap/js/bootstrap.min.js"></script>
-  <script src="../JavaScript/Script.js"></script>
-  
+  <script src="../../Portal/JavaScript/Script.js"></script>
+  <script src="/Bootstrap/js/bootstrap.js"></script>
+  <script src="chat.js"></script>
 </body>
 
 </html>
