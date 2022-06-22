@@ -36,7 +36,6 @@
             <a class="dropdown-item" href="atv_extra_matricular.html">Atividades Extras</a>
             <!-- <div class="dropdown-divider"></div> -->
             <a class="dropdown-item" href="agenda_consultar.html">Agenda</a>
-            <a class="dropdown-item" href="#">Chat</a>
           </div>
         </li>
       </ul>
@@ -54,35 +53,26 @@
         <p class="lead">Aqui você pode consultar boletos pendentes.</p>
       </div>
     </div>
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"><img src="/img/logotransp2.png" width="40" height="40"
-          class="d-inline-block align-top mr-3" alt="Logo" />Colégio Negativo</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
     </nav> -->
   </header>
 
   <section class="container">
-    <!-- <h1 class="d-flex justify-content-center">
-      Consulta de valores pendentes
-    </h1> -->
-    <form class="needs-validation mt-4" novalidate>
-      <div class="form-group-row">
-        <div class="col-md-7 mb-3">
-          <label for="validationCustom01">Nome completo</label>
-          <input type="text" class="form-control" id="validationCustom01" value="" required />
-        </div>
-        <div class="col-md-5 mb-3">
-          <label for="validationCustom02">CPF</label>
-          <input type="text" class="form-control" id="validationCustom02" value="" required />
-        </div>
-        <button class="btn buttonColor ml-3 mb-4 mt-3" type="submit">
-          Consultar
-        </button>
+    <div class="row">
+      <div class="col-12">
+        <table class="table text-center">
+          <thead class="text-center">
+            <tr>
+              <th scope="col">Valores totais pendentes por aluno</th>
+            </tr>
+            <tr class="text-center">
+              <td> </td>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
       </div>
-    </form>
+    </div>
 
     <div class="mb-4">
       <a class="btn btn-warning btn-sm" href="#" role="button" onclick="imprimir()">Imprimir</a>
@@ -108,6 +98,8 @@
   <script src="../../Bootstrap/js/bootstrap.min.js"></script>
   <script src="../../Portal/JavaScript/Script.js"></script>
   <script src="/Bootstrap/js/bootstrap.js"></script>
+
+  <script src="boleto.js"></script>
 </body>
 
 </html>
