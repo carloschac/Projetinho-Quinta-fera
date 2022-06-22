@@ -16,18 +16,18 @@ function imprimir() {
 
 //ocultar notas
 
-var dropdown = document.getElementById('droplist')
+let dropdown = document.getElementById('droplist')
 optionPrev = 'null'
 
 function combo(value) {
   if (dropdown.options[dropdown.selectedIndex].value != 1) {
-    var option = dropdown.options[dropdown.selectedIndex].value
+    let option = dropdown.options[dropdown.selectedIndex].value
     if (optionPrev != 'null') {
-      var optionHide = document.getElementById(optionPrev)
-      optionHide.classList.toggle('show')
+      let optionHide = document.getElementById(optionPrev)
+      optionHide.classList.toggle('hidden')
     }
-    var optionShow = document.getElementById(option)
-    optionShow.classList.toggle('raiseSunshine')
+    let optionShow = document.getElementById(option)
+    optionShow.classList.toggle('hidden')
     optionPrev = option
   }
 }
