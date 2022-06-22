@@ -1,0 +1,148 @@
+<!-- Página para desenvolver um chat em tempo real com a opção de enviar email(conexão em todas as áreas).  -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Chat</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <a class="navbar-brand text-light" href="../../Portal/index2.html">
+      <img src="../../img/logotransp2.png" width="40" height="40" class="d-inline-block align-top mr-3"
+        alt="Logo">Colégio Negativo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="../../Portal/AreaAluno.html">Home <span class="sr-only">(página
+              atual)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Mais opções
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Notas</a>
+            <a class="dropdown-item" href="#">Atividades Extras</a>
+            <a class="dropdown-item" href="#">Agenda</a>
+            <a class="dropdown-item" href="#">Chat</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-warning text-light my-2 my-sm-0" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </nav>
+
+  <header>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Chat</h1>
+        <p class="lead">Aqui você pode digitar um recado e encaminhar para os professores e secretaria.</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="container">
+
+    <div>
+      <form>
+        <div class="row ml-2">
+          <div class="col-6 mb-4">
+            <label for="inputnome" class="col-sm-5 col-form-label">Seu Nome:</label>
+            <input type="text" class="form-control" placeholder="Nome">
+          </div>
+        </div>
+
+        <div class="row ml-2">
+          <div class="form-group col-md-4 mb-4">
+            <label for="inputAno">Selecione Professor(a):</label>
+            <select id="inputAno" class="form-control">
+              <option selected>Escolher</option>
+              <option value="prof1">Ines Maria</option>
+              <option value="prof2">Rodrigo Agular</option>
+              <option value="prof3">Adriana Grande</option>
+
+            </select>
+          </div>
+
+          <div class="form-group col-md-4 mb-4 ml-2">
+            <label for="inputAno">Selecione a turma:</label>
+            <select id="inputAno" class="form-control">
+              <option selected>Escolher</option>
+              <option value="ano1">1° Ano</option>
+              <option value="ano2">2° Ano</option>
+              <option value="ano3">3° Ano</option>
+              <option value="ano4">4° Ano</option>
+              <option value="ano5">5° Ano</option>
+              <option value="ano6">6° Ano</option>
+              <option value="ano7">7° Ano</option>
+              <option value="ano8">8° Ano</option>
+              <option value="ano9">9° Ano</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group col-8 mb-4">
+          <label for="exampleFormControlTextarea1">Digite seu recado:</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+          <small id="emailHelp" class="form-text text-muted">Lembre-se, seja educado, formal e breve.</small>
+          <input type="reset" value="Limpar" class="btn btn-warning btn-sm mb-4 mt-4">
+          <input type="button" value="Enviar" onclick="chat()" class="btn btn-warning btn-sm mb-4 mt-4">
+
+          <a class="btn btn-warning btn-sm" href="AreaAluno.html" role="button">Voltar</a>
+        </div>
+      </form>
+      <article>
+
+        <h6>Perguntas frequentes:</h6>
+         <button onclick="duvida1()">Atividades Extras</button>
+         <button onclick="duvida2()">Nota Errada</button>
+         <button onclick="duvida3()">Boletos</button>
+        </article>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="bg-secondary text-light text-center font-weight-light mb-0 p-3">
+      <p>Todos os direitos reservados a Colégio Tecnologico Negativo <br>
+        CNPJ: xx.xxx.xxx/xxxx-xx <br>
+        2022</p>
+    </div>
+
+  </footer>
+
+  <script>
+    function chat() {
+      window.open("https://web.whatsapp.com/", '_blank');
+    }
+    
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="../../Bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../Portal/JavaScript/Script.js"></script>
+  <script src="/Bootstrap/js/bootstrap.js"></script>
+  <script src="chat.js"></script>
+</body>
+
+</html>
