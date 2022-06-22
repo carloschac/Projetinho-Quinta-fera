@@ -7,11 +7,19 @@ let textPassword = document.getElementById("textPassword");
 
 form.addEventListener("submit", (e) => {
   if(email.value == "ana@gmail.com" && password.value == "ana123" || email.value == "carina@gmail.com" && password.value =="carina"){
-     location.href = "teste.html"; 
+     location.href = "AreaAluno.html"; 
     //  redirecionar para o portal do aluno
   }
   else if (email.value == "carlos@gmail.com" && password.value == "carlos" || email.value == "duda@gmail.com" && password.value == "eduarda" ){
-    location.href = "agenda_lancar.html";
+    location.href = "AreaProf.html";
+    // redirecionar para o portal do professor
+  }
+  else if (email.value == "pais@gmail.com" && password.value == "pais123"){
+    location.href = "AreaPais";
+    // redirecionar para o portal do professor
+  }
+  else if (email.value == "secretaria@gmail.com" && password.value == "secretaria"){
+    location.href = "AreaSecretaria";
     // redirecionar para o portal do professor
   }
   else{
