@@ -7,7 +7,7 @@ let textPassword = document.getElementById("textPassword");
 
 form.addEventListener("submit", (e) => {
   if(email.value == "ana@gmail.com" && password.value == "ana123" || email.value == "carina@gmail.com" && password.value =="carina"){
-     location.href = "AreaAluno.html"; 
+     location.href = "Aluno/AreaAluno.html"; 
     //  redirecionar para o portal do aluno
   }
   else if (email.value == "carlos@gmail.com" && password.value == "carlos" || email.value == "duda@gmail.com" && password.value == "eduarda" ){
