@@ -36,3 +36,4 @@ for (var i = 0; i < boleto.length; i++){
     tabela.appendChild(myP)
      
 }
+
