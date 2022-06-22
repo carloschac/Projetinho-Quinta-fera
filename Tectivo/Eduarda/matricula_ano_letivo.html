@@ -52,11 +52,16 @@
         </div>
     </nav>
     <nav>
-        Rematricula
+        <section class="container navbar col-2 mt-2">
+            Rematricula
+        </section>
     </nav>
-    <form>
-        Digite seu nome completo: <input type="text" name="nome" placeholder="digite seu nome"> <br>
-        Digite seu CPF:<form name="cadastro">
+    <section class="container navbar col-4 mt-4">
+        <form>
+            <div class="form-group"></div>
+            <label for="">Nome Completo</label>
+            <input type="text" name="nome" placeholder="digite seu nome"> <br>
+            <label for="">CPF do aluno</label>
             <input type="text" name="cpf" placeholder="digite seu CPF" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
                 title="Digite um CPF no formato: xxx.xxx.xxx-xx">
             <input type="submit" value="Verificar" onclick="ver()">
@@ -67,8 +72,12 @@
             </script>
 
         </form>
-        Digite seu endereço: <input type="text" name="endereco" placeholder="digite seu endereco"><br>
-        Digite seu celular: <input type="text" name="celular" placeholder="digite seu celular"><br>
+
+
+        <label for="">Endereço</label>
+        <input type="text" name="endereco" placeholder="digite seu endereco"><br>
+        <label for="">Celular</label>
+        <input type="text" name="celular" placeholder="digite seu celular"><br>
         Digite nome da mãe/responsável: <input type="text" name="maeresponsavel"
             placeholder="digite nome da mãe/responsavel"><br>
         Digite nome do pai: <input type="text" name="pai" placeholder="digite nome do pai"><br>
@@ -85,10 +94,10 @@
             <option value="ano">8° Ano</option>
             <option value="ano">9° Ano</option>
         </select>
+        </div>
+        </form>
 
-    </form>
-
-
+    </section>
     <form>
         <input type="button" value="Matricular" onclick="msg()">
     </form>
