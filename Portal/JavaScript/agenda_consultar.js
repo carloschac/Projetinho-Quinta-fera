@@ -34,7 +34,5 @@ for (var i = 0; i < agenda.length; i++){
     tabela.appendChild(myP)
      
 }
-  
-    
-     console.log(myTd)
+
 
