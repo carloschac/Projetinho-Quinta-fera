@@ -32,6 +32,7 @@ function combo(value) {
   }
 }
 dropdown.onchange = combo
+console.log(combo)
 
 //ocultar faltas
 
