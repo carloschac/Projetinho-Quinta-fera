@@ -19,7 +19,7 @@ form.addEventListener("submit", (e) => {
     // redirecionar para o portal do professor
   }
   else if (email.value == "secretaria@gmail.com" && password.value == "secretaria"){
-    location.href = "AreaSecretaria";
+    location.href = "Secretaria/AreaSecretaria.html";
     // redirecionar para o portal do professor
   }
   else{
