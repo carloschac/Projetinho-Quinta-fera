@@ -11,11 +11,11 @@ form.addEventListener("submit", (e) => {
     //  redirecionar para o portal do aluno
   }
   else if (email.value == "carlos@gmail.com" && password.value == "carlos" || email.value == "duda@gmail.com" && password.value == "eduarda" ){
-    location.href = "AreaProf.html";
+    location.href = "Portal/Prof/AreaProf.html";
     // redirecionar para o portal do professor
   }
   else if (email.value == "pais@gmail.com" && password.value == "pais123"){
-    location.href = "AreaPais";
+    location.href = "Pais/AreaPais.html";
     // redirecionar para o portal do professor
   }
   else if (email.value == "secretaria@gmail.com" && password.value == "secretaria"){
