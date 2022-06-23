@@ -1,0 +1,40 @@
+[
+    {
+        "nome":"Carlos Camilo",
+        "email":"carlinhoslindo24@hotmail.com",
+        "telefone":"698.274.3282 x1847",
+        "id":"1",
+        "Disciplina":
+        [
+            {
+                "name":"Matematica",
+                "turma": "Quinto ano"
+                
+            },
+            {
+                "name":"Portugues",
+                "turma": "Sexto ano"
+                
+            }
+        ]
+    },
+    {
+        "nome":"Eduarda Muller",
+        "email":"loiradotchan26@yahoo.com",
+        "telefone":"233-851-4516",
+        "id":"2",
+        "Disciplina":
+        [
+            {
+                "name":"Geografia",
+                "turma": "Sexto ano"
+                
+            },
+            {
+                "name":"Artes",
+                "turma": "Quinto ano"
+                
+            }
+        ]
+    }
+]

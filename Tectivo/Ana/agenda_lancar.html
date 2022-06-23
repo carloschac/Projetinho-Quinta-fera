@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Agenda Aluno 2</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <a class="navbar-brand text-light" href="../../Portal/index2.html">
+      <img src="../../img/logotransp2.png" width="40" height="40" class="d-inline-block align-top mr-3" alt="Logo">Colégio Negativo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="../Tectivo/Ana/Login.html">Login <span class="sr-only">(página atual)</span></a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link text-light" href="#">Link</a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Mais opções
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Rematricula</a>
+            <a class="dropdown-item" href="#">Atividades Extras</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Sobre nós</a>
+          </div>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled text-light" href="#">Desativado</a>
+        </li> -->
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-warning text-light my-2 my-sm-0" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </nav>
+  <header>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Registro de agenda aluno</h1>
+          <p class="lead">Aqui você pode lançar os compromissos dos seus alunos para que ele não perca prazos! Lance atividades extras, provas e mais..</p>
+        </div>
+    </div>
+</header>
+  <div class="container clearfix">
+    <div id= "novoEvento" class="row my-2 mx-1 py-2 border rounded d-none">
+      <div class="col-12">
+        <form action="" id="formNovoEvento">
+          <div class="row">
+            <div class="col-12">
+              <h2>Novo Evento</h2>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-12">
+              <label for="nomeAluno" class="form-label">Nome do Aluno</label>
+              <input type="text" name="nomeAluno" id="nomeAluno" class="form-control" placeholder="Ex: Carina de Araujo Rosa">
+            </div>
+            <div class="col-12">
+                <label for="nomeEvento" class="form-label">Nome do Evento</label>
+                <input type="text" name="nomeEvento" id="nomeEvento" class="form-control" placeholder="Ex: Atividade Complementar de Natação, Aula de Artes, Prova de Geografia">
+              </div>
+            <div class="col-12">
+              <label for="dataEvento" class="form-label">Data do Evento</label>
+              <input type="datetime-local" name="dataEvento" id="dataEvento" class="form-control">
+            </div>
+
+            <div class="col-12">
+                <div  id= "msgDeErro" class="alert alert-danger d-none"role="alert" >
+                    ms de erro
+                </div>
+            </div>
+
+            <div class="col-6"><button type="button" class="btn btn-danger w-100" id="buttonCancelar">Cancelar</button></div>
+            <div class="col-6"><button type="submit" class="btn btn-primary w-100">Salvar</button></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3 class="h3 text-secondary">
+      
+        </h3>
+      </div>
+      <div class="col-auto">
+        <button type="button" class="btn btn-warning" id="buttonNovoEvento">Novo Evento</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <table class="table">
+          <thead>
+            <tr>
+            <th scope="col">Aluno</th>
+            <th scope="col">Data</th>
+            <th scope="col">Evento</th>
+           </tr>
+          </thead>
+          <tbody id = tabelaEventos>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <footer>
+    <div class="bg-secondary text-light text-center font-weight-light m-0 p-3">
+      <p>Todos os direitos reservados a Colégio Tecnologico Negativo <br>
+        CNPJ: xx.xxx.xxx/xxxx-xx <br>
+        2022</p>
+    </div>
+  </footer>
+</body>
+<script src="agenda_lancar.js"></script>
+</html>
+
